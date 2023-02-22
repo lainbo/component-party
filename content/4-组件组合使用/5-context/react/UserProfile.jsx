@@ -9,8 +9,8 @@ export default function UserProfile() {
       <h2>My Profile</h2>
       <p>Username: {username}</p>
       <p>Email: {email}</p>
-      <button onClick={() => updateUsername("Jane")}>
-        Update username to Jane
+      <button onClick={() => updateUsername("李四")}>
+        Update username to 李四
       </button>
     </div>
   );

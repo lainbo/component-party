@@ -1,7 +1,7 @@
 export class Name {
-  name = "John";
+  name = "张三";
 
   constructor() {
-    this.name = "Jane";
+    this.name = "李四";
   }
 }

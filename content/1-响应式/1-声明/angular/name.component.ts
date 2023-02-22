@@ -5,5 +5,5 @@ import { Component } from "@angular/core";
   template: `<h1>Hello {{ name }}</h1>`,
 })
 export class NameComponent {
-  name = "John";
+  name = "张三";
 }

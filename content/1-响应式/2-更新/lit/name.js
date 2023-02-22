@@ -4,11 +4,11 @@ import { customElement, state } from "lit/decorators.js";
 @customElement("x-name")
 export class XName extends LitElement {
   @state()
-  name = "John";
+  name = "张三";
 
   constructor() {
     super();
-    this.name = "Jane";
+    this.name = "李四";
   }
 
   render() {

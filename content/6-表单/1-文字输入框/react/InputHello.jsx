@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function InputHello() {
-  const [text, setText] = useState("Hello world");
+  const [text, setText] = useState("这是一段示范文字");
 
   function handleChange(event) {
     setText(event.target.value);

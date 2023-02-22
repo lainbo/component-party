@@ -5,9 +5,9 @@ import { Component } from "@angular/core";
   template: `<h1>Hello {{ name }}</h1>`,
 })
 export class NameComponent {
-  name = "John";
+  name = "张三";
 
   constructor() {
-    this.name = "Jane";
+    this.name = "李四";
   }
 }

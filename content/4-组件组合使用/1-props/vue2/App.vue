@@ -10,7 +10,7 @@ export default {
 
 <template>
   <UserProfile
-    name="John"
+    name="张三"
     :age="20"
     :favorite-colors="['green', 'blue', 'red']"
     is-available

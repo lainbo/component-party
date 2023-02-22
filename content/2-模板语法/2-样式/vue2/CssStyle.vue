@@ -1,10 +1,10 @@
 <template>
   <div>
     <h1 class="title">
-      I am red
+      我是红色的
     </h1>
     <button style="font-size: 10rem">
-      I am a button
+      我是一个按钮
     </button>
   </div>
 </template>

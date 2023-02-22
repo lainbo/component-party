@@ -6,5 +6,5 @@
   }
 </script>
 
-<p>Counter: {count}</p>
+<p>计数器: {count}</p>
 <button on:click={incrementCount}>+1</button>

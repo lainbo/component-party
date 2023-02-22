@@ -8,7 +8,7 @@
   <h2>My Profile</h2>
   <p>Username: {$userStore.username}</p>
   <p>Email: {$userStore.email}</p>
-  <button on:click={() => userStore.updateUsername("Jane")}>
-    Update username to Jane
+  <button on:click={() => userStore.updateUsername("李四")}>
+    Update username to 李四
   </button>
 </div>

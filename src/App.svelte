@@ -140,7 +140,7 @@
           class={c(
             "text-sm flex-shrink-0 rounded border border-gray-700 px-3 py-1 border-opacity-50 bg-gray-900 hover:bg-gray-800 transition-all mr-2",
             frameworkIdsSelected.has(framework.id)
-              ? "border-blue-500"
+              ? "border-red-500"
               : "opacity-70"
           )}
           on:click={() => toggleFrameworkId(framework.id)}
