@@ -7,12 +7,12 @@
     <div class="flex justify-between items-center py-3">
       <a class="font-semibold text-lg flex items-center space-x-3" href="/">
         <img src="/popper.svg" alt="logo" class="w-5 h-5" />
-        <span>Component party</span>
+        <span>JavaScript框架语法特性对比</span>
       </a>
 
       <div>
         <a
-          href="https://github.com/matschik/component-party"
+          href="https://github.com/lainbo/component-party"
           title="Contribute on Github"
           target="_blank"
           rel="noopener noreferrer"
