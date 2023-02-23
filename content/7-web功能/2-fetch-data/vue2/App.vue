@@ -31,10 +31,10 @@ export default {
 
 <template>
   <p v-if="isLoading">
-    Fetching users...
+    正在获取用户信息
   </p>
   <p v-else-if="error">
-    An error ocurred while fetching users
+    获取用户信息出错
   </p>
   <ul v-else-if="users">
     <li

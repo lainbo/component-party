@@ -22,8 +22,8 @@ export const App = component$(() => {
   return (
     <Resource
       value={data}
-      onPending={() => <p>Fetching users...</p>}
-      onRejected={() => <p>An error occurred while fetching users</p>}
+      onPending={() => <p>正在获取用户信息</p>}
+      onRejected={() => <p>获取用户信息出错</p>}
       onResolved={({ results: users }) => (
         <ul>
           {users.map((user) => (

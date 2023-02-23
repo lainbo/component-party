@@ -31,7 +31,7 @@ const FunnyButton = component$(() => {
       <span class="slot">
         <Slot />
       </span>
-      <span class="fallback">No content found</span>
+      <span class="fallback">默认slot内容</span>
     </button>
   );
 });

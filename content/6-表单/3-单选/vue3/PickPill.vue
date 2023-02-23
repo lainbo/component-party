@@ -5,7 +5,7 @@ const picked = ref("red");
 </script>
 
 <template>
-  <div>Picked: {{ picked }}</div>
+  <div>你选择了: {{ picked }}</div>
 
   <input
     id="blue-pill"
@@ -13,7 +13,7 @@ const picked = ref("red");
     type="radio"
     value="blue"
   >
-  <label for="blue-pill">Blue pill</label>
+  <label for="blue-pill">蓝色</label>
 
   <input
     id="red-pill"
@@ -21,5 +21,5 @@ const picked = ref("red");
     type="radio"
     value="red"
   >
-  <label for="red-pill">Red pill</label>
+  <label for="red-pill">红色</label>
 </template>

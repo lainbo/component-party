@@ -4,12 +4,12 @@ Built-in <a href="https://guides.emberjs.com/release/routing/linking-between-rou
 <ul>
   <li>
     <LinkTo @route="index">
-      Home
+      首页
     </LinkTo>
   </li>
   <li>
     <LinkTo @route="about">
-      About us
+      关于
     </LinkTo>
   </li>
 </ul>

@@ -2,4 +2,4 @@
   import FunnyButton from "./FunnyButton.svelte";
 </script>
 
-<FunnyButton>Click me!</FunnyButton>
+<FunnyButton>点我!</FunnyButton>

@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-pick-pill",
   template: `
-    <div>Picked: {{ picked }}</div>
+    <div>你选择了: {{ picked }}</div>
 
     <input
       id="blue-pill"
@@ -12,7 +12,7 @@ import { Component } from "@angular/core";
       value="blue"
       (change)="handleChange($event)"
     />
-    <label for="blue-pill">Blue pill</label>
+    <label for="blue-pill">蓝色</label>
 
     <input
       id="red-pill"
@@ -21,7 +21,7 @@ import { Component } from "@angular/core";
       value="red"
       (change)="handleChange($event)"
     />
-    <label for="red-pill">Red pill</label>
+    <label for="red-pill">红色</label>
   `,
 })
 export class PickPillComponent {

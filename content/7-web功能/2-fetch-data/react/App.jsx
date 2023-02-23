@@ -6,9 +6,9 @@ export default function App() {
   return (
     <>
       {isLoading ? (
-        <p>Fetching users...</p>
+        <p>正在获取用户信息</p>
       ) : error ? (
-        <p>An error occured while fetching users</p>
+        <p>获取用户信息出错</p>
       ) : (
         users && (
           <ul>

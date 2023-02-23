@@ -9,7 +9,7 @@ import { Component, ContentChild, TemplateRef } from "@angular/core";
       </ng-container>
 
       <ng-template #fallback>
-        <span>No content found</span>
+        <span>默认slot内容</span>
       </ng-template>
     </button>
   `,

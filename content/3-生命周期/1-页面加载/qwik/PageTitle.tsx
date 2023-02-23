@@ -9,5 +9,5 @@ export const App = component$(() => {
     store.pageTitle = document.title;
   });
 
-  return <p>Page title: {store.pageTitle}</p>;
+  return <p>页面标题: {store.pageTitle}</p>;
 });

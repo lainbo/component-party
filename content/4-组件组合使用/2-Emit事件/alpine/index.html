@@ -1,12 +1,8 @@
-<div
-  x-data="{ canCome: true }"
-  x-on:yes="canCome = true"
-  x-on:no="canCome = false"
->
-  <p>Are you happy?</p>
+<div x-data="{ happy: true }" x-on:yes="happy = true" x-on:no="happy = false">
+  <p>你快乐吗?</p>
   <div>
-    <button x-on:click="$dispatch('yes')">YES</button>
-    <button x-on:click="$dispatch('no')">NO</button>
+    <button x-on:click="$dispatch('yes')">是的！</button>
+    <button x-on:click="$dispatch('no')">不是！</button>
   </div>
-  <p style="font-size: 50px" x-text="canCome ? '😀' : '😥'"></p>
+  <p style="font-size: 50px" x-text="happy ? '😀' : '😥'"></p>
 </div>

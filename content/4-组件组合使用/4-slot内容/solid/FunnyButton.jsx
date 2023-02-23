@@ -14,7 +14,7 @@ export default function FunnyButton(props) {
         outline: "0",
       }}
     >
-      {props.children || <span>No content found</span>}
+      {props.children || <span>默认slot内容</span>}
     </button>
   );
 }

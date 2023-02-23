@@ -9,7 +9,7 @@ import { Component } from "@angular/core";
       [checked]="isAvailable"
       (change)="handleChange()"
     />
-    <label for="is-available">Is available</label>
+    <label for="is-available">这是一个checkbox</label>
   `,
 })
 export class IsAvailableComponent {

@@ -11,10 +11,10 @@ export default function App() {
   return (
     <Switch>
       <Match when={data.loading}>
-        <p>Fetching users...</p>
+        <p>正在获取用户信息</p>
       </Match>
       <Match when={data.error}>
-        <p>An error occurred while fetching users</p>
+        <p>获取用户信息出错</p>
       </Match>
       <Match when={users()}>
         <ul>

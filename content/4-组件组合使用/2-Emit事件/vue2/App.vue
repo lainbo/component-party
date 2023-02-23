@@ -6,15 +6,15 @@ export default {
   },
   data() {
     return {
-      canCome: true,
+      happy: true,
     };
   },
   methods: {
     onAnswerNo() {
-      this.canCome = false;
+      this.happy = false;
     },
     onAnswerYes() {
-      this.canCome = true;
+      this.happy = true;
     },
   },
 };
@@ -22,10 +22,13 @@ export default {
 
 <template>
   <div>
-    <p>Are you happy?</p>
-    <AnswerButton @yes="onAnswerYes" @no="onAnswerNo" />
+    <p>你快乐吗?</p>
+    <AnswerButton
+      @yes="onAnswerYes"
+      @no="onAnswerNo"
+    />
     <p style="font-size: 50px">
-      {{ canCome ? "😀" : "😥" }}
+      {{ happy ? "😀" : "😥" }}
     </p>
   </div>
 </template>

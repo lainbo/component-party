@@ -8,5 +8,5 @@ export default {
 </script>
 
 <template>
-  <FunnyButton> Click me! </FunnyButton>
+  <FunnyButton> 点我! </FunnyButton>
 </template>

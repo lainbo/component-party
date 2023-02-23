@@ -12,5 +12,5 @@ export default {
 </script>
 
 <template>
-  <p>Page title: {{ pageTitle }}</p>
+  <p>页面标题: {{ pageTitle }}</p>
 </template>

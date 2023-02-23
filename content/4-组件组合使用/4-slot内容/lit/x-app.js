@@ -8,7 +8,7 @@ export class XApp extends LitElement {
   render() {
     return html`
       <funny-button></funny-button>
-      <funny-button>Click me!</funny-button>
+      <funny-button>点我!</funny-button>
     `;
   }
 }

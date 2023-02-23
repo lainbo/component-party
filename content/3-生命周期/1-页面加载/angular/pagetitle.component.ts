@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-pagetitle",
-  template: `<p>Page title: {{ pageTitle }}</p>`,
+  template: `<p>页面标题: {{ pageTitle }}</p>`,
 })
 export class PagetitleComponent implements OnInit {
   pageTitle = "";

@@ -17,10 +17,10 @@ export class UserProfile extends LitElement {
 
   render() {
     return html`
-      <p>My name is ${this.name}</p>
-      <p>My age is ${this.age}</p>
+      <p>我的名字是 ${this.name}</p>
+      <p>我的年龄是 ${this.age}</p>
       <p>My favourite coloros are ${this.favouriteColors.join(", ")}</p>
-      <p>I am ${this.isAvailable ? "available" : "not available"}</p>
+      <p>我现在 ${this.isAvailable ? '离职状态' : '在职'}</p>
     `;
   }
 }

@@ -8,10 +8,10 @@ export default function UserProfile(props) {
 
   return (
     <>
-      <p>My name is {merged.name}!</p>
-      <p>My age is {merged.age}!</p>
-      <p>My favourite colors are {merged.favouriteColors.join(", ")}!</p>
-      <p>I am {merged.isAvailable ? "available" : "not available"}</p>
+      <p>我的名字是 {merged.name}!</p>
+      <p>我的年龄是 {merged.age}!</p>
+      <p>我喜欢的颜色是 {merged.favouriteColors.join(", ")}!</p>
+      <p>我现在 {merged.isAvailable ? '离职状态' : '在职'}</p>
     </>
   );
 }

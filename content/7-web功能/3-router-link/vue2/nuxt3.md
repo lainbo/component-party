@@ -2,10 +2,10 @@
 <template>
   <ul>
     <li>
-      <RouterLink to="/"> Home </RouterLink>
+      <RouterLink to="/"> 首页 </RouterLink>
     </li>
     <li>
-      <RouterLink to="/about"> About us </RouterLink>
+      <RouterLink to="/about"> 关于 </RouterLink>
     </li>
   </ul>
 </template>

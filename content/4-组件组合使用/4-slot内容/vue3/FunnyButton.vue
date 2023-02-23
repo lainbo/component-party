@@ -14,7 +14,7 @@
     "
   >
     <slot>
-      <span>No content found</span>
+      <span>默认slot内容</span>
     </slot>
   </button>
 </template>

@@ -7,6 +7,6 @@ export class XName extends LitElement {
   name = "张三";
 
   render() {
-    return html`<h1>Hello ${this.name}!</h1>`;
+    return html`<h1>你好 ${this.name}!</h1>`;
   }
 }

@@ -17,10 +17,10 @@ const UserProfile = component$((props: Props) => {
 
   return (
     <>
-      <p>My name is {name}!</p>
-      <p>My age is {age}!</p>
-      <p>My favourite colors are {favouriteColors.join(", ")}!</p>
-      <p>I am {isAvailable ? "available" : "not available"}</p>
+      <p>我的名字是 {name}!</p>
+      <p>我的年龄是 {age}!</p>
+      <p>我喜欢的颜色是 {favouriteColors.join(", ")}!</p>
+      <p>我现在 {isAvailable ? '离职状态' : '在职'}</p>
     </>
   );
 });

@@ -1,6 +1,6 @@
 <template>
-  <p if.bind="isLoading">Fetching users...</p>
-  <p if.bind="error">An error ocurred while fetching users</p>
+  <p if.bind="isLoading">正在获取用户信息</p>
+  <p if.bind="error">获取用户信息出错</p>
   <ul if.bind="users">
     <li repeat.for="user of users">
       <img src.bind="user.picture.thumbnail" alt="user" />

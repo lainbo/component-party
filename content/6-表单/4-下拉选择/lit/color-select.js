@@ -4,10 +4,10 @@ import { customElement, state } from "lit/decorators.js";
 @customElement("color-select")
 export class ColorSelect extends LitElement {
   colors = [
-    { id: 1, text: "red" },
-    { id: 2, text: "blue" },
-    { id: 3, text: "green" },
-    { id: 4, text: "gray", isDisabled: true },
+    { id: 1, text: "红" },
+    { id: 2, text: "蓝" },
+    { id: 3, text: "绿" },
+    { id: 4, text: "灰", isDisabled: true },
   ];
 
   @state()

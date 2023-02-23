@@ -8,10 +8,10 @@ const Home = component$(() => {
   return (
     <ul>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/">首页</Link>
       </li>
       <li>
-        <Link href="/about">About us</Link>
+        <Link href="/about">关于</Link>
       </li>
     </ul>
   );

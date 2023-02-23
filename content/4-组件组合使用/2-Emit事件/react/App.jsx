@@ -2,21 +2,21 @@ import { useState } from "react";
 import AnswerButton from "./AnswerButton.jsx";
 
 export default function App() {
-  const [canCome, setCanCome] = useState(true);
+  const [happy, setHappy] = useState(true);
 
   function onAnswerNo() {
-    setCanCome(false);
+    setHappy(false);
   }
 
   function onAnswerYes() {
-    setCanCome(true);
+    setHappy(true);
   }
 
   return (
     <>
-      <p>Are you happy?</p>
+      <p>你快乐吗?</p>
       <AnswerButton onYes={onAnswerYes} onNo={onAnswerNo} />
-      <p style={{ fontSize: 50 }}>{canCome ? "😀" : "😥"}</p>
+      <p style={{ fontSize: 50 }}>{happy ? "😀" : "😥"}</p>
     </>
   );
 }

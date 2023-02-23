@@ -277,13 +277,13 @@
                                     <span
                                       class="block text-2xl tracking-tight font-bold"
                                     >
-                                      Missing snippet
+                                      没有这个代码片段~
                                     </span>
                                     <span
                                       class="block text-lg mt-1 font-semibold space-x-1"
                                     >
                                       <span>
-                                        Help us to improve Component Party
+                                        帮助我改进它！
                                       </span>
                                       <img
                                         src="/popper.svg"

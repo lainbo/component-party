@@ -12,10 +12,10 @@ function clickNo() {
 
 <template>
   <button @click="clickYes">
-    YES
+    是的！
   </button>
 
   <button @click="clickNo">
-    NO
+    不是！
   </button>
 </template>

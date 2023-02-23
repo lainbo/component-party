@@ -6,11 +6,11 @@ export default function UserProfile() {
 
   return (
     <div>
-      <h2>My Profile</h2>
-      <p>Username: {username}</p>
-      <p>Email: {email}</p>
+      <h2>我的简介</h2>
+      <p>用户名: {username}</p>
+      <p>邮箱: {email}</p>
       <button onClick={() => updateUsername("李四")}>
-        Update username to 李四
+        更新用户名为李四
       </button>
     </div>
   );

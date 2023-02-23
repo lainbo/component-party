@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
     <app-funny-button></app-funny-button>
 
     <app-funny-button>
-      <ng-template #content>I got content!</ng-template>
+      <ng-template #content>这是传到slot的内容!</ng-template>
     </app-funny-button>
   `,
 })

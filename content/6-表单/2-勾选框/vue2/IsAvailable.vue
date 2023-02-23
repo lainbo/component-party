@@ -15,6 +15,6 @@ export default {
       v-model="isAvailable"
       type="checkbox"
     >
-    <label for="is-available">Is available</label>
+    <label for="is-available">这是一个checkbox</label>
   </div>
 </template>

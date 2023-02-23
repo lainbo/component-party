@@ -2,8 +2,8 @@ import Component from "@glimmer/component";
 import { tracked } from "@glimmer/tracking";
 
 export default class App extends Component {
-  @tracked canCome = true;
+  @tracked happy = true;
 
-  handleYes = () => (this.canCome = true);
-  handleNo = () => (this.canCome = false);
+  handleYes = () => (this.happy = true);
+  handleNo = () => (this.happy = false);
 }

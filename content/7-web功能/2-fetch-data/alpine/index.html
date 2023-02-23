@@ -1,5 +1,4 @@
-<div
-  x-data="
+<div x-data="
 		function fetchUsers() {
 			return {
 				users: null,
@@ -17,26 +16,22 @@
 				},
 			};
 		}
-	"
->
-  <template x-if="isLoading">
-    <p>Loading...</p>
-  </template>
+	">
+	<template x-if="isLoading">
+		<p>正在获取用户信息</p>
+	</template>
 
-  <template x-if="error">
-    <p>Error fetching users</p>
-  </template>
-  <template x-if="!error">
-    <ul>
-      <template x-for="user in users">
-        <li>
-          <img
-            :src="user.picture.thumbnail"
-            :alt="`picture of ${user.name.first} ${user.name.last}`"
-          />
-          <p x-text="`${user.name.first} ${user.name.last}`"></p>
-        </li>
-      </template>
-    </ul>
-  </template>
+	<template x-if="error">
+		<p>获取用户信息出错</p>
+	</template>
+	<template x-if="!error">
+		<ul>
+			<template x-for="user in users">
+				<li>
+					<img :src="user.picture.thumbnail" :alt="`picture of ${user.name.first} ${user.name.last}`" />
+					<p x-text="`${user.name.first} ${user.name.last}`"></p>
+				</li>
+			</template>
+		</ul>
+	</template>
 </div>

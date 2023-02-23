@@ -10,6 +10,6 @@ export default {
 <template>
   <div>
     <FunnyButton />
-    <FunnyButton> I got content! </FunnyButton>
+    <FunnyButton> 这是传到slot的内容! </FunnyButton>
   </div>
 </template>

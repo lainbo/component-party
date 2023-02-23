@@ -3,22 +3,22 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-root",
   template: `
-    <p>Are you happy?</p>
+    <p>你快乐吗?</p>
 
     <app-answer-button (yes)="onAnswerYes()" (no)="onAnswerNo()">
     </app-answer-button>
 
-    <p style="font-size: 50px">{{ canCome ? "😀" : "😥" }}</p>
+    <p style="font-size: 50px">{{ happy ? "😀" : "😥" }}</p>
   `,
 })
 export class AppComponent {
-  canCome = true;
+  happy = true;
 
   onAnswerYes() {
-    this.canCome = true;
+    this.happy = true;
   }
 
   onAnswerNo() {
-    this.canCome = false;
+    this.happy = false;
   }
 }

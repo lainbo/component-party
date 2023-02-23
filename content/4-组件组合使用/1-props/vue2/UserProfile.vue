@@ -27,9 +27,9 @@ export default {
 
 <template>
   <div>
-    <p>My name is {{ props.name }}!</p>
-    <p>My age is {{ props.age }}!</p>
+    <p>我的名字是 {{ props.name }}!</p>
+    <p>我的年龄是 {{ props.age }}!</p>
     <p>My favorite colors are {{ props.favoriteColors.join(", ") }}!</p>
-    <p>I am {{ props.isAvailable ? "available" : "not available" }}</p>
+    <p>我现在 {{ props.isAvailable ? '离职状态' : '在职' }}</p>
   </div>
 </template>

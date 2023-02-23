@@ -33,10 +33,10 @@ export class XApp extends LitElement {
 
   render() {
     if (this.loading) {
-      return html`<p>Fetching users...</p>`;
+      return html`<p>正在获取用户信息</p>`;
     }
     if (this.error) {
-      return html`<p>An error occurred while fetching users</p>`;
+      return html`<p>获取用户信息出错</p>`;
     }
     if (this.data) {
       return html`

@@ -9,5 +9,5 @@ export default function Time() {
 
   onCleanup(() => clearInterval(timer));
 
-  return <p>Current time: {time()}</p>;
+  return <p>当前时间: {time()}</p>;
 }

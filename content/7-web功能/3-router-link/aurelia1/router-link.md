@@ -6,10 +6,10 @@ See [Building the Application Shell](http://aurelia.io/docs/tutorials/creating-a
 <template>
   <ul>
     <li>
-      <a routerLink="/#/home">Home</a>
+      <a routerLink="/#/home">首页</a>
     </li>
     <li>
-      <a routerLink="/#/about">About</a>
+      <a routerLink="/#/about">关于</a>
     </li>
   </ul>
 </template>

@@ -1,7 +1,7 @@
 export class App {
-  canCome = false;
+  happy = false;
 
   handleAnswer(...reply) {
-    this.canCome = reply[0] === "yes" ? true : false;
+    this.happy = reply[0] === "yes" ? true : false;
   }
 }

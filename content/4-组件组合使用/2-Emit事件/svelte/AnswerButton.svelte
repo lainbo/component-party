@@ -12,6 +12,6 @@
   }
 </script>
 
-<button on:click={clickYes}> YES </button>
+<button on:click={clickYes}> 是的！ </button>
 
-<button on:click={clickNo}> NO </button>
+<button on:click={clickNo}> 不是！ </button>

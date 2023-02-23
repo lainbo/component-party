@@ -3,10 +3,10 @@ With [@vaadin/router](https://vaadin.com/router)
 ```html
 <ul>
   <li>
-    <a href="/">Home</a>
+    <a href="/">首页</a>
   </li>
   <li>
-    <a href="/about">About us</a>
+    <a href="/about">关于</a>
   </li>
 </ul>
 ```

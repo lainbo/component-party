@@ -13,5 +13,5 @@ export default function Time() {
     };
   }, []);
 
-  return <p>Current time: {time}</p>;
+  return <p>当前时间: {time}</p>;
 }

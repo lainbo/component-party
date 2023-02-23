@@ -15,7 +15,7 @@ const IsAvailable = component$(() => {
         checked={store.isAvailable}
         onChange$={handleChange}
       />
-      <label for="is-available">Is available</label>
+      <label for="is-available">这是一个checkbox</label>
     </>
   );
 });

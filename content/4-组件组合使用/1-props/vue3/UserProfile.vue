@@ -24,8 +24,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <p>My name is {{ props.name }}!</p>
-  <p>My age is {{ props.age }}!</p>
-  <p>My favourite colors are {{ props.favouriteColors.join(", ") }}!</p>
-  <p>I am {{ props.isAvailable ? "available" : "not available" }}</p>
+  <p>我的名字是 {{ props.name }}!</p>
+  <p>我的年龄是 {{ props.age }}!</p>
+  <p>我喜欢的颜色是 {{ props.favouriteColors.join(", ") }}!</p>
+  <p>我现在 {{ props.isAvailable ? '离职状态' : '在职' }}</p>
 </template>
