@@ -10,18 +10,40 @@ function sortAllFilenames(files, filenamesSorted) {
 
 export default [
   {
-    id: "svelte",
-    title: "Svelte",
-    img: "framework/svelte.svg",
+    id: "vue2",
+    title: "Vue 2",
+    img: "framework/vue.svg",
     eslint: {
-      files: ["*.svelte"],
-      processor: "svelte3/svelte3",
-      plugins: ["svelte3"],
+      files: ["**/vue2/*.vue"],
+      extends: ["eslint:recommended", "plugin:vue/recommended"],
+      rules: {
+        "vue/multi-word-component-names": "off",
+      },
     },
-    playgroundURL: "https://svelte.dev/repl",
-    documentationURL: "https://svelte.dev/",
+    playgroundURL: "",
+    documentationURL: "https://v2.vuejs.org",
     filesSorter(files) {
-      return sortAllFilenames(files, ["index.html", "app.js", "App.svelte"]);
+      return sortAllFilenames(files, ["index.html", "App.vue"]);
+    },
+  },
+  {
+    id: "vue3",
+    title: "Vue 3",
+    img: "framework/vue.svg",
+    eslint: {
+      files: ["**/vue3/*.vue"],
+      env: {
+        "vue/setup-compiler-macros": true,
+      },
+      extends: ["eslint:recommended", "plugin:vue/vue3-recommended"],
+      rules: {
+        "vue/multi-word-component-names": "off",
+      },
+    },
+    playgroundURL: "https://sfc.vuejs.org",
+    documentationURL: "https://vuejs.org/guide",
+    filesSorter(files) {
+      return sortAllFilenames(files, ["index.html", "App.vue"]);
     },
   },
   {
@@ -48,23 +70,18 @@ export default [
     },
   },
   {
-    id: "vue3",
-    title: "Vue 3",
-    img: "framework/vue.svg",
+    id: "svelte",
+    title: "Svelte",
+    img: "framework/svelte.svg",
     eslint: {
-      files: ["**/vue3/*.vue"],
-      env: {
-        "vue/setup-compiler-macros": true,
-      },
-      extends: ["eslint:recommended", "plugin:vue/vue3-recommended"],
-      rules: {
-        "vue/multi-word-component-names": "off",
-      },
+      files: ["*.svelte"],
+      processor: "svelte3/svelte3",
+      plugins: ["svelte3"],
     },
-    playgroundURL: "https://sfc.vuejs.org",
-    documentationURL: "https://vuejs.org/guide",
+    playgroundURL: "https://svelte.dev/repl",
+    documentationURL: "https://svelte.dev/",
     filesSorter(files) {
-      return sortAllFilenames(files, ["index.html", "App.vue"]);
+      return sortAllFilenames(files, ["index.html", "app.js", "App.svelte"]);
     },
   },
   {
@@ -177,23 +194,6 @@ export default [
     documentationURL: "https://lit.dev",
     filesSorter(files) {
       return sortAllFilenames(files, ["index.html", "x-app.js"]);
-    },
-  },
-  {
-    id: "vue2",
-    title: "Vue 2",
-    img: "framework/vue.svg",
-    eslint: {
-      files: ["**/vue2/*.vue"],
-      extends: ["eslint:recommended", "plugin:vue/recommended"],
-      rules: {
-        "vue/multi-word-component-names": "off",
-      },
-    },
-    playgroundURL: "",
-    documentationURL: "https://v2.vuejs.org",
-    filesSorter(files) {
-      return sortAllFilenames(files, ["index.html", "App.vue"]);
     },
   },
   {
