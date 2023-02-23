@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 export default function TrafficLight() {
   const [lightIndex, setLightIndex] = useState(0);
@@ -17,13 +17,13 @@ export default function TrafficLight() {
 
   return (
     <>
-      <button onClick={nextLight}>Next light</button>
-      <p>Light is: {light}</p>
+      <button onClick={nextLight}>下一个灯</button>
+      <p>现在亮着的是: {light}</p>
       <p>
-        You must
-        {light === "red" && <span>STOP</span>}
-        {light === "orange" && <span>SLOW DOWN</span>}
-        {light === "green" && <span>GO</span>}
+        你应该
+        {light === "红灯" && <span>停下</span>}
+        {light === "黄灯" && <span>慢行</span>}
+        {light === "绿灯" && <span>赶紧走</span>}
       </p>
     </>
   );

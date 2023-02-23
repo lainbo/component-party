@@ -2,7 +2,7 @@ import { LitElement, html } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { choose } from "lit/directives/choose.js";
 
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 @customElement("traffic-light")
 export class TrafficLight extends LitElement {
@@ -23,14 +23,14 @@ export class TrafficLight extends LitElement {
 
   render() {
     return html`
-      <button @click=${this.nextLight}>Next light</button>
-      <p>Light is ${this.light}</p>
+      <button @click=${this.nextLight}>下一个灯</button>
+      <p>现在亮着的是 ${this.light}</p>
       <p>
-        You must
+        你应该
         ${choose(this.light, [
-          ["red", () => html`<span>STOP</span>`],
-          ["orange", () => html`<span>SLOW DOWN</span>`],
-          ["green", () => html`<span>GO</span>`],
+          ["红灯", () => html`<span>停下</span>`],
+          ["黄灯", () => html`<span>慢行</span>`],
+          ["绿灯", () => html`<span>赶紧走</span>`],
         ])}
       </p>
     `;

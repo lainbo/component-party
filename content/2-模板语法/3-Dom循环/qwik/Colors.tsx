@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 export const Colors = component$(() => {
-  const colors = ["red", "green", "blue"];
+  const colors = ["红", "绿", "蓝"];
   return (
     <>
       <ul>

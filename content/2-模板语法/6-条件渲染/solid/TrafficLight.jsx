@@ -1,6 +1,6 @@
 import { createSignal, Switch, Match } from "solid-js";
 
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 export default function TrafficLight() {
   const [lightIndex, setLightIndex] = createSignal(0);
@@ -17,19 +17,19 @@ export default function TrafficLight() {
 
   return (
     <>
-      <button onClick={nextLight}>Next light</button>
-      <p>Light is: {light()}</p>
+      <button onClick={nextLight}>下一个灯</button>
+      <p>现在亮着的是: {light()}</p>
       <p>
-        You must
+        你应该
         <Switch>
-          <Match when={light() === "red"}>
-            <span>STOP</span>
+          <Match when={light() === "红灯"}>
+            <span>停下</span>
           </Match>
-          <Match when={light() === "orange"}>
-            <span>SLOW DOWN</span>
+          <Match when={light() === "黄灯"}>
+            <span>慢行</span>
           </Match>
-          <Match when={light() === "green"}>
-            <span>GO</span>
+          <Match when={light() === "绿灯"}>
+            <span>赶紧走</span>
           </Match>
         </Switch>
       </p>

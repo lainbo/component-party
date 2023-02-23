@@ -1,3 +1,3 @@
 export class Colors {
-  colors = ["red", "green", "blue"];
+  colors = ["红", "绿", "蓝"];
 }

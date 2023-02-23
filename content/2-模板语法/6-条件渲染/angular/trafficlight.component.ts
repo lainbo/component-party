@@ -1,18 +1,18 @@
 import { Component } from "@angular/core";
 
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 @Component({
   selector: "app-trafficlight",
   template: `
-    <button (click)="nextLight()">Next light</button>
-    <p>Light is: {{ light }}</p>
+    <button (click)="nextLight()">下一个灯</button>
+    <p>现在亮着的是: {{ light }}</p>
     <p>
-      You must
+      你应该
       <ng-container [ngSwitch]="light">
-        <span *ngSwitchCase="'red'">STOP</span>
-        <span *ngSwitchCase="'orange'">SLOW DOWN</span>
-        <span *ngSwitchCase="'green'">GO</span>
+        <span *ngSwitchCase="'红灯'">停下</span>
+        <span *ngSwitchCase="'黄灯'">慢行</span>
+        <span *ngSwitchCase="'绿灯'">赶紧走</span>
       </ng-container>
     </p>
   `,
