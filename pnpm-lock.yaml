@@ -36,6 +36,7 @@ specifiers:
   lodash.kebabcase: ^4.1.1
   micache: ^2.4.1
   pkg-dir: ^7.0.0
+  pnpm: ^7.27.1
   postcss: ^8.4.21
   prettier: ^2.8.2
   prettier-plugin-svelte: ^2.9.0
@@ -94,6 +95,7 @@ devDependencies:
   lodash.kebabcase: 4.1.1
   micache: 2.4.1
   pkg-dir: 7.0.0
+  pnpm: 7.27.1
   postcss: 8.4.21
   prettier: 2.8.2
   prettier-plugin-svelte: 2.9.0_74vfyr7qjo56zgjcvkwi6gyjxm
@@ -106,7 +108,7 @@ devDependencies:
   shiki: 0.12.1
   svelte: 3.55.0
   svelte-preprocess: 5.0.0_qh5rqjrmv45lmziy7axdgdjxmy
-  tailwindcss: 3.2.4_postcss@8.4.21
+  tailwindcss: 3.2.4
   tslib: 2.4.1
   typescript: 4.9.4
   unified: 10.1.2
@@ -889,7 +891,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.4_postcss@8.4.21
+      tailwindcss: 3.2.4
     dev: true
 
   /@types/debug/4.1.7:
@@ -3677,7 +3679,7 @@ packages:
   /heroiconsvelte/0.1.5:
     resolution: {integrity: sha512-OX3QfrT3Vbf8ERh89IxCGcpcK0hU4HhLtkG2WVQKrejuHhJrkvWm0p16LMqtCbvlw3lcaXDMQtwpeDHlr50p1w==}
     dependencies:
-      heroicons: github.com/tailwindlabs/heroicons/1511059c0584aa0d2690cb89c01b183c4ae011d7
+      heroicons: github.com/tailwindlabs/heroicons/1ef549d0b7eaba7224b3db9654894fad12364f7f
     dev: false
 
   /homedir-polyfill/1.0.3:
@@ -5364,6 +5366,12 @@ packages:
       find-up: 6.3.0
     dev: true
 
+  /pnpm/7.27.1:
+    resolution: {integrity: sha512-IpBeZ+71slENbuOXwbV4U6yxOMfEWEvlVuT6+ChZ1D80oF0eHyN4h/hc13UrzVXpXI3bf7sPfRWGb8TYkrvJUA==}
+    engines: {node: '>=14.6'}
+    hasBin: true
+    dev: true
+
   /postcss-import/14.1.0_postcss@8.4.21:
     resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
     engines: {node: '>=10.0.0'}
@@ -6367,12 +6375,10 @@ packages:
       - supports-color
     dev: true
 
-  /tailwindcss/3.2.4_postcss@8.4.21:
+  /tailwindcss/3.2.4:
     resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
@@ -7040,8 +7046,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/tailwindlabs/heroicons/1511059c0584aa0d2690cb89c01b183c4ae011d7:
-    resolution: {tarball: https://codeload.github.com/tailwindlabs/heroicons/tar.gz/1511059c0584aa0d2690cb89c01b183c4ae011d7}
+  github.com/tailwindlabs/heroicons/1ef549d0b7eaba7224b3db9654894fad12364f7f:
+    resolution: {tarball: https://codeload.github.com/tailwindlabs/heroicons/tar.gz/1ef549d0b7eaba7224b3db9654894fad12364f7f}
     name: heroicons
-    version: 2.0.13
+    version: 2.0.16
     dev: false
