@@ -75,7 +75,7 @@ export default async function generateContent() {
             files: [],
             playgroundURL: "",
             markdownFiles: [],
-            snippetEditHref: `https://github.com/matschik/component-party/tree/main/content/${sectionDirName}/${snippetDirName}/${frameworkId}`,
+            snippetEditHref: `https://github.com/lainbo/component-party/tree/main/content/${sectionDirName}/${snippetDirName}/${frameworkId}`,
           };
 
           const codeFilesDirPath = path.join(frameworksDirPath, frameworkId);

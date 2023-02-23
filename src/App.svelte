@@ -78,7 +78,7 @@
     }
 
     if (frameworkIdsSelectedOnInit.length === 0) {
-      frameworkIdsSelectedOnInit = ["svelte", "react"];
+      frameworkIdsSelectedOnInit = ["vue3", "react"];
     }
 
     frameworkIdsSelected = new Set(frameworkIdsSelectedOnInit);
@@ -140,8 +140,8 @@
           class={c(
             "text-sm flex-shrink-0 rounded border border-gray-700 px-3 py-1 border-opacity-50 bg-gray-900 hover:bg-gray-800 transition-all mr-2",
             frameworkIdsSelected.has(framework.id)
-              ? "border-red-500"
-              : "opacity-70"
+              ? "border-blue-300 contrast-125"
+              : "opacity-80 grayscale-[10%]"
           )}
           on:click={() => toggleFrameworkId(framework.id)}
         >
@@ -301,7 +301,7 @@
                                         <button
                                           class="flex items-center space-x-3"
                                         >
-                                          <span>Contribute on Github</span>
+                                          <span>在Github上投稿</span>
                                           <GithubIcon class="h-5 w-5" />
                                         </button>
                                       </a>

@@ -15,3 +15,26 @@
 .shiki {
   @apply text-[1.05rem];
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  border-width: 0px;
+  background: #505050;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #676768;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
