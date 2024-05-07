@@ -149,7 +149,7 @@
           class={c(
             "text-sm flex-shrink-0 rounded border border-gray-700 px-3 py-1 border-opacity-50 bg-gray-900 hover:bg-gray-800 transition-all mr-2",
             frameworkIdsSelected.has(framework.id)
-              ? "border-blue-300 contrast-125"
+              ? "!border-[#93c5fd80] contrast-125"
               : "opacity-70"
           )}
           on:click={() => toggleFrameworkId(framework.id)}
@@ -164,7 +164,7 @@
             class={c(
               "text-sm flex-shrink-0 rounded border border-gray-700 px-3 py-1 border-opacity-50 bg-gray-900 hover:bg-gray-800 transition-all mr-2",
               frameworkIdsSelected.has(framework.id)
-                ? "border-blue-500"
+                ? "!border-[#93c5fd80] contrast-125"
                 : "opacity-70"
             )}
             on:click={() => toggleFrameworkId(framework.id)}
@@ -214,7 +214,7 @@
               >
                 <img src="/popper.svg" alt="logo" class="w-6 h-6" />
                 <span>
-                  Please select a framework to view framework's snippets
+                  请选择框架以查看框架片段代码
                 </span>
                 <img src="/popper.svg" alt="logo" class="w-6 h-6" />
               </p>

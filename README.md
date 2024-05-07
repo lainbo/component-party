@@ -1,3 +1,5 @@
+**这个项目是 [component-party](https://github.com/matschik/component-party.dev) 的中文汉化版本，如果有帮助希望点个Star支持下，我会持续更新语法**
+
 ![Component Party 🎉](.github/banner.webp)
 
 > 通过语法和特性快速概述Web组件JS框架
@@ -7,8 +9,6 @@
 ## 🤔 Why ?
 
 许多JS开发者并未对所有现有的JS框架及其自身的语法和特性有一个良好的概览。我们如何解决这个问题呢？开发者们喜欢通过例子来了解框架的概览。这是在深入学习之前的快速介绍。
-
-这个项目是 [component-party](https://github.com/matschik/component-party.dev) 的中文版本
 
 ## 🔥 Progression
 
