@@ -1,0 +1,10 @@
+<template>
+  <button click.trigger="nextLight()">下一个灯</button>
+  <p>现在亮着的是: ${light}</p>
+  <p>
+    你应该
+    <span if.bind="light === '红灯'">停下</span>
+    <span if.bind="light === '黄灯'">慢行</span>
+    <span if.bind="light === '绿灯'">赶紧走</span>
+  </p>
+</template>

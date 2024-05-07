@@ -1,0 +1,8 @@
+<div>
+  <h2>我的简介</h2>
+  <p>用户名: {{this.user.username}}</p>
+  <p>邮箱: {{this.user.email}}</p>
+  <button {{on "click" (fn this.userService.updateUserName "李四")}}>
+    更新用户名为 李四
+  </button>
+</div>

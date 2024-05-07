@@ -3,7 +3,7 @@
   import createLocaleStorage from "../lib/createLocaleStorage";
   import GithubIcon from "./GithubIcon.svelte";
 
-  const REPOSITORY_PATH = "matschik/component-party.dev";
+  const REPOSITORY_PATH = "lainbo/component-party";
   const DURATION_2_MIN = 1000 * 60 * 2;
   const STAR_COUNT_DURATION_EXPIRATION = DURATION_2_MIN;
 

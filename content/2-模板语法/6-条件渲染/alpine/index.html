@@ -1,0 +1,17 @@
+<div x-data="{
+  TRAFFIC_LIGHTS: ['红灯', '黄灯', '绿灯'],
+  lightIndex: 0,
+  get light() { return this.TRAFFIC_LIGHTS[this.lightIndex] },
+  nextLight() {
+    this.lightIndex = (this.lightIndex + 1) % this.TRAFFIC_LIGHTS.length;
+  }
+}">
+  <button x-on:click="nextLight">下一个灯</button>
+  <p>现在亮着的是: <span x-text="light"></span></p>
+  <p>
+    你应该
+    <span x-show="light === '红灯'">停下</span>
+    <span x-show="light === '黄灯'">慢行</span>
+    <span x-show="light === '绿灯'">赶紧走</span>
+  </p>
+</div>

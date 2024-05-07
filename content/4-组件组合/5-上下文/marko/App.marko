@@ -1,0 +1,13 @@
+<let/user = { // 在实际项目，你会从接口获取用户数据
+  id: 1,
+  username: "abcdefg",
+  email: "abcdefg@example.com",
+}/>
+<const/updateUsername(newUsername) {
+  user = { ...user, username: newUsername };
+}/>
+
+<h1>欢迎回来, ${user.username}</h1>
+<set={ ...user, updateUsername }>
+  <UserProfile />
+</set>

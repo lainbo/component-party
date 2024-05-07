@@ -1,0 +1,18 @@
+<await(fetch("https://randomuser.me/api/?results=3").then(res => res.json()))>
+  <@placeholder>
+    <p>正在获取用户信息……</p>
+  </@placeholder>
+  <@catch|error|>
+    <p>获取用户信息出错</p>
+  </@catch>
+  <@then|{ results: users }|>
+    <ul>
+      <for|{ picture, name }| of=users>
+        <li>
+          <img src=picture.thumbnail alt="user">
+          <p>${name.first} ${name.last}</p>
+        </li>
+      </for>
+    </ul>
+  </@then>
+</await>

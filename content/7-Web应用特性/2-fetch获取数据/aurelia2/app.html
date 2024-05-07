@@ -1,0 +1,10 @@
+<template promise.bind="useFetchUsers.fetchData()">
+  <p pending>正在获取用户信息……</p>
+  <p catch>获取用户信息出错</p>
+  <ul then.from-view="users">
+    <li repeat.for="user of users">
+      <img src.bind="user.picture.thumbnail" alt="user" />
+      <p>${ user.name.first } ${ user.name.last }</p>
+    </li>
+  </ul>
+</template>

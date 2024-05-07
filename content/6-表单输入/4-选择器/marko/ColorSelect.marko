@@ -1,0 +1,15 @@
+static const colors = [
+  { id: 1, text: "红" },
+  { id: 2, text: "蓝" },
+  { id: 3, text: "绿" },
+  { id: 4, text: "灰", isDisabled: true },
+];
+<let/selectedColorId = 2/>
+
+<select onChange(event) { selectedColorId = event.target.value }>
+  <for|{ id, isDisabled, text }| of=colors>
+    <option value=id disabled=isDisabled selected=id === selectedColorId>
+      ${text}
+    </option>
+  </for>
+</select>

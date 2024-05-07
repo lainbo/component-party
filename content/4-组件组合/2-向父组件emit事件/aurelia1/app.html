@@ -1,0 +1,6 @@
+<template>
+  <require from="./answer-button"></require>
+  <p>你快乐吗?</p>
+  <answer-button action-handler.call="handleAnswer(reply)"></answer-button>
+  <p style="font-size: 50px">${isHappy ? "😀" : "😥"}</p>
+</template>

@@ -1,0 +1,9 @@
+<div x-data="{ picked: 'red' }">
+  <div>你选择了: <span x-text="picked"></span></div>
+
+  <input id="blue-pill" x-model="picked" type="radio" value="blue" />
+  <label for="blue-pill">蓝色</label>
+
+  <input id="red-pill" x-model="picked" type="radio" value="red" />
+  <label for="red-pill">红色</label>
+</div>

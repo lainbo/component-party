@@ -1,0 +1,8 @@
+<div x-data="{ isHappy: true }" x-on:yes="isHappy = true" x-on:no="isHappy = false">
+  <p>你快乐吗?</p>
+  <div>
+    <button x-on:click="$dispatch('yes')">是的！</button>
+    <button x-on:click="$dispatch('no')">不是！</button>
+  </div>
+  <p style="font-size: 50px" x-text="isHappy ? '😀' : '😥'"></p>
+</div>

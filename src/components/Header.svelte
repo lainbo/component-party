@@ -7,7 +7,7 @@
     <div class="flex justify-between items-center py-3">
       <a class="font-semibold text-lg flex items-center space-x-3" href="/">
         <img src="/popper.svg" alt="logo" class="w-5 h-5" />
-        <span>Component party</span>
+        <span>JavaScript 框架语法特性对比-中文版</span>
       </a>
       <GithubStarButton />
     </div>

@@ -1,13 +1,14 @@
 ![Component Party 🎉](.github/banner.webp)
 
-> Web component JS frameworks quick overview by their syntax and features
+> 通过语法和特性快速概述Web组件JS框架
 
-**Website: <https://component-party.dev>**
+**网站: <https://component-party.lainbo.com/>**
 
 ## 🤔 Why ?
 
-Many JS developers don't have a good overview of every existing JS framework with their own syntax and features.
-How do we solve this ? Developers love having framework overview by examples. It's a quick introduction before going deeper.
+许多JS开发者并未对所有现有的JS框架及其自身的语法和特性有一个良好的概览。我们如何解决这个问题呢？开发者们喜欢通过例子来了解框架的概览。这是在深入学习之前的快速介绍。
+
+这个项目是 [component-party](https://github.com/matschik/component-party.dev) 的中文版本
 
 ## 🔥 Progression
 
@@ -532,43 +533,6 @@ How do we solve this ? Developers love having framework overview by examples. It
 
 </details>
 <!-- progression end -->
-
-## 🤝 Contributing
-
-This site is built with [Vite](https://vitejs.dev) and [Svelte](https://svelte.dev). Site content is written in Markdown format located in `content`. For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
-
-For local development, [pnpm](https://pnpm.io/) is preferred as package manager:
-
-```bash
-pnpm i
-pnpm run dev
-```
-
-This project requires Node.js to be `v16.0.0` or higher.
-
-### Principle when add/edit a framework snippet
-
-> Clarity is better than optimization for Component Party
-
-In Component Party, we prioritize clarity over optimization as our core educational focus. We aim to simplify complex overviews of different JS frameworks for easy understanding, rather than presenting over-optimized solutions.
-We believe that deep understanding should precede optimization, enabling learners to master the frameworks' use and discover optimization techniques independently. This approach aligns with our commitment to fostering accessible and effective learning in the field of web component JavaScript frameworks.
-
-### Add a new framework
-
-1.  Fork the project and create a new branch
-2.  Add the new framework SVG logo in `public/framework`
-3.  Install the ESLint plugin associated to the framework
-4.  In `frameworks.mjs`, add a new entry with SVG link and ESLint configuration
-5.  If the framework needs a language syntax highlight, add it to the call to `getHighlighter`’s `langs` argument in `build/lib/generateContent.js`
-6.  To make a playground link:
-    1. Add a `create${FRAMEWORK}Playground.js` file in `build/lib/playground`.
-    2. That file should export a function that returns an object with a `fromContentByFilename` method that accepts an object of filepath keys and file content values, then returns an absolute URL to a framework’s online REPL with those files loaded.
-    3. Register its export in `build/lib/playground/index.js`
-
-## 🧑‍💻 Contributors
-
-This project exists thanks to all the people who contribute. \[[Contribute](CONTRIBUTING.md)].
-[![Contributors](https://opencollective.com/component-party/contributors.svg?width=890&button=false)](https://github.com/matschik/component-party/graphs/contributors)
 
 ## ⚖️ License
 

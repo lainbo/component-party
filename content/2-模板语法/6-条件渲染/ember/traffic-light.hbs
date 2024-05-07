@@ -1,0 +1,12 @@
+<button {{on "click" this.nextLight}}>下一个灯</button>
+<p>现在亮着的是: {{this.light}}</p>
+<p>
+  你应该
+  {{#if (eq this.light "red")}}
+    停下
+  {{else if (eq this.light "orange")}}
+    慢行
+  {{else if (eq this.light "green")}}
+    赶紧走
+  {{/if}}
+</p>
