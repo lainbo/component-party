@@ -1,34 +1,29 @@
-import { component$, useStore, $ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 
 const PickPill = component$(() => {
-  const store = useStore({ picked: "red" });
-
-  const handleChange = $((event: Event) => {
-    store.picked = (event.target as HTMLInputElement).value;
-  });
+  const pickedColor = useSignal("red");
 
   return (
     <>
-      <div>你选择了: {store.picked}</div>
+      <div>你选择了: {pickedColor.value}</div>
       <input
         id="blue-pill"
-        checked={store.picked === "blue"}
         type="radio"
+        bind:value={pickedColor}
+        checked={pickedColor.value === "blue"}
         value="blue"
-        onChange$={handleChange}
       />
       <label for="blue-pill">蓝色</label>
 
       <input
         id="red-pill"
-        checked={store.picked === "red"}
         type="radio"
+        checked={pickedColor.value === "red"}
+        bind:value={pickedColor}
         value="red"
-        onChange$={handleChange}
       />
       <label for="red-pill">红色</label>
     </>
   );
 });
-
 export default PickPill;

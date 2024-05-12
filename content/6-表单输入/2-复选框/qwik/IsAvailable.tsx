@@ -1,23 +1,13 @@
-import { component$, useStore, $ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 
 const IsAvailable = component$(() => {
-  const store = useStore({ isAvailable: false });
-
-  const handleChange = $(() => {
-    store.isAvailable = !store.isAvailable;
-  });
+  const isAvailable = useSignal(false);
 
   return (
     <>
-      <input
-        id="is-available"
-        type="checkbox"
-        checked={store.isAvailable}
-        onChange$={handleChange}
-      />
+      <input id="is-available" type="checkbox" bind:checked={isAvailable} />
       <label for="is-available">这是一个checkbox</label>
     </>
   );
 });
-
 export default IsAvailable;

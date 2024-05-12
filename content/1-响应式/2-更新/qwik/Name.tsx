@@ -1,8 +1,11 @@
-import { component$, useStore } from "@builder.io/qwik";
+import { component$, useTask$, useSignal } from "@builder.io/qwik";
 
 export const Name = component$(() => {
-  const store = useStore({ name: "张三" });
-  store.name = "李四";
+  const name = useSignal("张三");
 
-  return <h1>你好 {store.name}</h1>;
+  useTask$(() => {
+    name.value = "李四";
+  });
+
+  return <h1>你好 {name.value}</h1>;
 });
