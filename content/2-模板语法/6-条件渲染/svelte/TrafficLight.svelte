@@ -13,11 +13,11 @@
 <p>现在亮着的是: {light}</p>
 <p>
   你应该
-  {#if light === "red"}
+  {#if light === "红灯"}
     <span>停下</span>
-  {:else if light === "orange"}
+  {:else if light === "黄灯"}
     <span>慢行</span>
-  {:else if light === "green"}
+  {:else if light === "绿灯"}
     <span>赶紧走</span>
   {/if}
 </p>
