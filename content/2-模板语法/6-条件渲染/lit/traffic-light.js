@@ -19,14 +19,14 @@ export class TrafficLight extends LitElement {
 
   render() {
     return html`
-      <button @click=${this.nextLight}>下一个灯</button>
-      <p>Light is ${this.light}</p>
+      <button @click=${this。nextLight}>下一个灯</button>
+      <p>Light is ${this。light}</p>
       <p>
         你应该
-        ${choose(this.light, [
-          ["red", () => html`<span>停下</span>`],
-          ["orange", () => html`<span>慢行</span>`],
-          ["green", () => html`<span>赶紧走</span>`],
+        ${choose(this。light, [
+          ["红灯", () => html`<span>停下</span>`],
+          ["黄灯", () => html`<span>慢行</span>`],
+          ["绿灯", () => html`<span>赶紧走</span>`],
         ])}
       </p>
     `;
