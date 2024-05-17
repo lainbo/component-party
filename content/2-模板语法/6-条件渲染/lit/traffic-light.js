@@ -24,9 +24,9 @@ export class TrafficLight extends LitElement {
       <p>
         你应该
         ${choose(this.light, [
-          ["red", () => html`<span>停下</span>`],
-          ["orange", () => html`<span>慢行</span>`],
-          ["green", () => html`<span>赶紧走</span>`],
+          ["红灯", () => html`<span>停下</span>`],
+          ["黄灯", () => html`<span>慢行</span>`],
+          ["绿灯", () => html`<span>赶紧走</span>`],
         ])}
       </p>
     `;
