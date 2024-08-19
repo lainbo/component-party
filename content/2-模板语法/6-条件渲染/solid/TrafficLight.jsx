@@ -18,13 +18,13 @@ export default function TrafficLight() {
       <p>
         你应该
         <Switch>
-          <Match when={light() === "red"}>
+          <Match when={light() === "红灯"}>
             <span>停下</span>
           </Match>
-          <Match when={light() === "orange"}>
+          <Match when={light() === "黄灯"}>
             <span>慢行</span>
           </Match>
-          <Match when={light() === "green"}>
+          <Match when={light() === "绿灯"}>
             <span>赶紧走</span>
           </Match>
         </Switch>

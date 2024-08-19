@@ -17,9 +17,9 @@ export default function TrafficLight() {
       <p>现在亮着的是: {light}</p>
       <p>
         你应该
-        {light === "red" && <span>停下</span>}
-        {light === "orange" && <span>慢行</span>}
-        {light === "green" && <span>赶紧走</span>}
+        {light === "红灯" && <span>停下</span>}
+        {light === "黄灯" && <span>慢行</span>}
+        {light === "绿灯" && <span>赶紧走</span>}
       </p>
     </>
   );
