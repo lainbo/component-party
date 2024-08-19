@@ -1,7 +1,6 @@
-import { useState, createContext } from "react";
+import { useState } from "react";
 import UserProfile from "./UserProfile";
-
-export const UserContext = createContext();
+import { UserContext } from "./UserContext";
 
 export default function App() {
   // 在实际项目，你会从接口获取用户数据
