@@ -10,7 +10,7 @@ export default function Home() {
         <Link href="/">首页</Link>
       </li>
       <li>
-        <Link href="/about">关于 us</Link>
+        <Link href="/about">关于</Link>
       </li>
     </ul>
   );
