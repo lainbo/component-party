@@ -17,7 +17,7 @@ const createFrameworkUrl = (frameworks: string[]) =>
 
 const footerNavigation = [
   {
-    title: "Most Popular Frameworks",
+    title: "最热门框架对比",
     links: [
       { name: "React vs Vue", url: createFrameworkUrl(["react", "vue3"]) },
       {
@@ -48,7 +48,7 @@ const footerNavigation = [
     ],
   },
   {
-    title: "Popular frameworks vs Rising frameworks",
+    title: "热门框架 vs 新兴框架",
     links: [
       {
         name: "React vs Svelte",
@@ -68,7 +68,7 @@ const footerNavigation = [
     ],
   },
   {
-    title: "Comparing Legacy version & Current Version",
+    title: "旧版本 vs 当前版本",
     links: [
       {
         name: "Svelte 4 vs Svelte 5",
@@ -86,7 +86,7 @@ const footerNavigation = [
     ],
   },
   {
-    title: "Comparing Current Version & Upcoming Version",
+    title: "当前版本 vs 即将发布版本",
     links: [
       {
         name: "Ember Octane vs Ember Polaris",
@@ -97,12 +97,12 @@ const footerNavigation = [
 ];
 
 const templateDataDefaults = {
-  title: "Component Party",
-  url: "https://component-party.dev/",
-  description: `Compare JavaScript frameworks side-by-side: React, Vue, Angular, Svelte, Solid.js, and more. See syntax differences, features, and code examples for web development frameworks.`,
+  title: "Component Party 中文版",
+  url: "https://component-party.lainbo.com/",
+  description: `JavaScript 框架语法对比：React、Vue、Angular、Svelte、Solid.js 等。查看 Web 开发框架的语法差异、特性和代码示例。`,
   keywords:
-    "JavaScript frameworks, React, Vue, Angular, Svelte, Solid.js, framework comparison, web development, frontend frameworks, component libraries, JavaScript libraries, code comparison, programming tools, developer tools, web components, JSX, TypeScript, modern JavaScript",
-  image: "https://component-party.dev/banner2.png",
+    "JavaScript 框架, React, Vue, Angular, Svelte, Solid.js, 框架对比, Web 开发, 前端框架, 组件库, JavaScript 库, 代码对比, 编程工具, 开发者工具, Web 组件, JSX, TypeScript, 现代 JavaScript",
+  image: "https://component-party.lainbo.com/banner2.png",
   frameworkCount: frameworks.length,
 };
 
