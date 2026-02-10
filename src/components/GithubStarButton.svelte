@@ -13,7 +13,7 @@
     color: string;
   }
 
-  const REPOSITORY_PATH = "matschik/component-party.dev";
+  const REPOSITORY_PATH = "lainbo/component-party";
   const STAR_COUNT_EXPIRES_IN_MS = 1000 * 60 * 5; // Shields.io caches for 5-15 minutes
 
   const starCountStorage = createLocaleStorage("github-star-count-v2", {
