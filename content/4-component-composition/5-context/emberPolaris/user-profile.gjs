@@ -12,11 +12,11 @@ export default class UserProfileComponent extends Component {
 
   <template>
     <div>
-      <h2>My Profile</h2>
-      <p>Username: {{this.user.username}}</p>
-      <p>Email: {{this.user.email}}</p>
-      <button {{on "click" (fn this.userService.updateUserName "Jane")}}>
-        Update username to Jane
+      <h2>我的简介</h2>
+      <p>用户名: {{this.user.username}}</p>
+      <p>邮箱: {{this.user.email}}</p>
+      <button {{on "click" (fn this.userService.updateUserName "李四")}}>
+        更新用户名为 李四
       </button>
     </div>
   </template>

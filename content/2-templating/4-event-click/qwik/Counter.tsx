@@ -9,7 +9,7 @@ export const Counter = component$(() => {
 
   return (
     <>
-      <p>Counter: {count.value}</p>
+      <p>计数器: {count.value}</p>
       <button onClick$={incrementCount}>Increment</button>
     </>
   );

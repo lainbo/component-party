@@ -2,15 +2,15 @@
 export default {
   data() {
     return {
-      name: "John",
+      name: "张三",
     };
   },
   created() {
-    this.name = "Jane";
+    this.name = "李四";
   },
 };
 </script>
 
 <template>
-  <h1>Hello {{ name }}</h1>
+  <h1>你好 {{ name }}</h1>
 </template>

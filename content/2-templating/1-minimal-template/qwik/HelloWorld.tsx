@@ -1,3 +1,3 @@
 export const HelloWorld = () => {
-  return <div>Hello World</div>;
+  return <div>你好，世界</div>;
 };

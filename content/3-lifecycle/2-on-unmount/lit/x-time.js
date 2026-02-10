@@ -21,6 +21,6 @@ export class XTime extends LitElement {
   }
 
   render() {
-    return html`<p>Current time: ${this.time}</p>`;
+    return html`<p>当前时间: ${this.time}</p>`;
   }
 }

@@ -16,6 +16,6 @@ export default class Time extends Component {
   }
 
   <template>
-    <p>Current time: {{this.time}}</p>
+    <p>当前时间: {{this.time}}</p>
   </template>
 }

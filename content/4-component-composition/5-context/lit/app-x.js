@@ -11,8 +11,8 @@ export class XApp extends LitElement {
   @state()
   user = {
     id: 1,
-    username: "unicorn42",
-    email: "unicorn42@example.com",
+    username: "abcdefg",
+    email: "abcdefg@example.com",
   };
 
   provider = new ContextProvider(this, {
@@ -26,7 +26,7 @@ export class XApp extends LitElement {
   }
 
   render() {
-    return html` <h1>Welcome back, ${this.user.username}</h1>
+    return html` <h1>欢迎回来, ${this.user.username}</h1>
       <user-profile
         .user="${this.user}"
         .updateUsername=${this.updateUsername.bind(this)}

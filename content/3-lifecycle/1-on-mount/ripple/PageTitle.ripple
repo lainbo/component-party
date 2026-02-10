@@ -7,5 +7,5 @@ export component PageTitle() {
     @pageTitle = document.title;
   });
 
-  <h1>{`Page title: ${@pageTitle}`}</h1>
+  <h1>{`页面标题: ${@pageTitle}`}</h1>
 }

@@ -4,7 +4,7 @@ export default function App() {
   return (
     <>
       <FunnyButton />
-      <FunnyButton>I got content!</FunnyButton>
+      <FunnyButton>这是传到slot的内容!</FunnyButton>
     </>
   );
 }

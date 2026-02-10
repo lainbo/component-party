@@ -7,5 +7,5 @@ export default function PageTitle() {
     setPageTitle(document.title);
   }, []);
 
-  return <p>Page title: {pageTitle}</p>;
+  return <p>页面标题: {pageTitle}</p>;
 }

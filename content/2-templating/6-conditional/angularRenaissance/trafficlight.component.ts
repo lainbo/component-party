@@ -1,23 +1,23 @@
 import { Component, computed, signal } from "@angular/core";
 
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 @Component({
   selector: "app-traffic-light",
   template: `
-    <button (click)="nextLight()">Next light</button>
-    <p>Light is: {{ light() }}</p>
+    <button (click)="nextLight()">下一个灯</button>
+    <p>现在亮着的是: {{ light() }}</p>
     <p>
-      You must
+      你应该
       @switch (light()) {
-        @case ("red") {
-          <span>STOP</span>
+        @case ("红灯") {
+          <span>停下</span>
         }
-        @case ("orange") {
-          <span>SLOW DOWN</span>
+        @case ("黄灯") {
+          <span>慢行</span>
         }
-        @case ("green") {
-          <span>GO</span>
+        @case ("绿灯") {
+          <span>赶紧走</span>
         }
       }
     </p>

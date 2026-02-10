@@ -5,7 +5,7 @@ import { AnswerButtonComponent } from "./answer-button.component";
   selector: "app-root",
   imports: [AnswerButtonComponent],
   template: `
-    <p>Are you happy?</p>
+    <p>你快乐吗?</p>
 
     <app-answer-button (yes)="onAnswerYes()" (no)="onAnswerNo()" />
 

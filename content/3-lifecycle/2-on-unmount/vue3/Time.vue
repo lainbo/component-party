@@ -13,5 +13,5 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <p>Current time: {{ time }}</p>
+  <p>当前时间: {{ time }}</p>
 </template>

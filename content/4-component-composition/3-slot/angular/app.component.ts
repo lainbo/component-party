@@ -3,7 +3,7 @@ import { FunnyButtonModule } from "./funny-button.component";
 
 @Component({
   selector: "app-root",
-  template: `<app-funny-button>Click me!</app-funny-button>`,
+  template: `<app-funny-button>点我!</app-funny-button>`,
 })
 export class AppComponent {}
 

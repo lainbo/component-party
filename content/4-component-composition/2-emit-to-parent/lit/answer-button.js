@@ -13,8 +13,8 @@ export class AnswerButton extends LitElement {
 
   render() {
     return html`
-      <button @click=${this.clickYes}>Yes</button>
-      <button @click=${this.clickNo}>No</button>
+      <button @click=${this.clickYes}>是的！</button>
+      <button @click=${this.clickNo}>不是！</button>
     `;
   }
 }

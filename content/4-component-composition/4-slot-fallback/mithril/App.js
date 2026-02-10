@@ -3,6 +3,6 @@ import FunnyButton from "./FunnyButton.jsx";
 
 export default function App() {
   return {
-    view: () => m("", m(FunnyButton), m(FunnyButton, "I got Content")),
+    view: () => m("", m(FunnyButton), m(FunnyButton, "这是传到slot的内容!")),
   };
 }

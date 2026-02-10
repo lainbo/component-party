@@ -6,7 +6,7 @@ const IsAvailable = component$(() => {
   return (
     <>
       <input id="is-available" type="checkbox" bind:checked={isAvailable} />
-      <label for="is-available">Is available</label>
+      <label for="is-available">这是一个checkbox</label>
     </>
   );
 });

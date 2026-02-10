@@ -1,6 +1,6 @@
 import { $, component$, useComputed$, useSignal } from "@builder.io/qwik";
 
-export const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+export const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 export const TrafficLight = component$(() => {
   const lightIndex = useSignal(0);
@@ -13,12 +13,12 @@ export const TrafficLight = component$(() => {
 
   return (
     <>
-      <button onClick$={nextLight}>Next light</button>
-      <p>Light is: {light.value}</p>
+      <button onClick$={nextLight}>下一个灯</button>
+      <p>现在亮着的是: {light.value}</p>
       <p>
-        You must {light.value === "red" && <span>STOP</span>}
-        {light.value === "orange" && <span>SLOW DOWN</span>}
-        {light.value === "green" && <span>GO</span>}
+        你应该 {light.value === "红灯" && <span>停下</span>}
+        {light.value === "黄灯" && <span>慢行</span>}
+        {light.value === "绿灯" && <span>赶紧走</span>}
       </p>
     </>
   );

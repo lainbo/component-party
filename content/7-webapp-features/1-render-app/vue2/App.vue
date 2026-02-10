@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello world</h1>
+  <h1>你好，世界</h1>
 </template>
 
 <script>

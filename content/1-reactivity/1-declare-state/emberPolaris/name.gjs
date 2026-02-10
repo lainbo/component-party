@@ -1,9 +1,9 @@
 import Component from "@glimmer/component";
 
 export default class NameComponent extends Component {
-  name = "John";
+  name = "张三";
 
   <template>
-    <h1>Hello {{this.name}}</h1>
+    <h1>你好 {{this.name}}</h1>
   </template>
 }

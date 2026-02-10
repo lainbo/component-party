@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js";
 
 export default function InputHello() {
-  const [text, setText] = createSignal("Hello world");
+  const [text, setText] = createSignal("你好世界");
 
   function handleChange(event) {
     setText(event.target.value);

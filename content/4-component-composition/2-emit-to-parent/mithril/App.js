@@ -10,7 +10,7 @@ export default function App() {
     view: () =>
       m(
         "",
-        m("p", "Are you happy?"),
+        m("p", "你快乐吗?"),
         m("p", { style: { fontSize: 50 } }, isHappy ? "😀" : "😥"),
         m(AnswerButton, { onYes: onAnswerYes, onNo: onAnswerNo }),
       ),

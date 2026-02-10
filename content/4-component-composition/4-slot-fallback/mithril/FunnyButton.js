@@ -17,6 +17,6 @@ export const FunnyButton = ({ children }) => ({
           outline: "0",
         },
       },
-      children || m("span", "No content found"),
+      children || m("span", "默认slot内容"),
     ),
 });

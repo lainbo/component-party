@@ -18,7 +18,7 @@ import { Component, ContentChild, TemplateRef } from "@angular/core";
   `,
   template: `
     <button>
-      <ng-content>No content found</ng-content>
+      <ng-content>默认slot内容</ng-content>
     </button>
   `,
 })

@@ -1,14 +1,14 @@
-static const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+static const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 <let/lightIndex=0>
 <const/light=TRAFFIC_LIGHTS[lightIndex]>
 
 <button onClick() { lightIndex = (lightIndex + 1) % TRAFFIC_LIGHTS.length }>
-  Next light
+  下一个灯
 </button>
-<p>Light is: ${light}</p>
+<p>现在亮着的是: ${light}</p>
 <p>
-  You must
-  <if=light === "red">STOP</if>
-  <else if=light === "orange">SLOW DOWN</else>
-  <else>GO</else>
+  你应该
+  <if=light === "红灯">停下</if>
+  <else if=light === "黄灯">慢行</else>
+  <else>赶紧走</else>
 </p>

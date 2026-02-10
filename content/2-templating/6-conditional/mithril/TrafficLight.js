@@ -1,5 +1,5 @@
 import m from "mithril";
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 export default function TrafficLight() {
   let lightIndex = 0;
@@ -9,12 +9,12 @@ export default function TrafficLight() {
 
   const instructions = () => {
     switch (currentLight()) {
-      case "red":
-        return "STOP";
-      case "orange":
-        return "SLOW DOWN";
-      case "green":
-        return "GO";
+      case "红灯":
+        return "停下";
+      case "黄灯":
+        return "慢行";
+      case "绿灯":
+        return "赶紧走";
     }
   };
 
@@ -22,9 +22,9 @@ export default function TrafficLight() {
     view: () =>
       m(
         "div",
-        m("button", { onclick: nextLight }, "Next light"),
-        m("p", `Light is: ${currentLight()}`),
-        m("p", "You must ", m("span", instructions())),
+        m("button", { onclick: nextLight }, "下一个灯"),
+        m("p", `现在亮着的是: ${currentLight()}`),
+        m("p", "你应该 ", m("span", instructions())),
       ),
   };
 }

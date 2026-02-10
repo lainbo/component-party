@@ -7,6 +7,6 @@ export component Counter() {
     @count++;
   }
 
-  <p>{`Count: ${@count}`}</p>
+  <p>{`计数器: ${@count}`}</p>
   <button onClick={incrementCount}>{"+1"}</button>
 }

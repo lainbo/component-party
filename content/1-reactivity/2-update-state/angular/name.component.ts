@@ -2,13 +2,13 @@ import { Component, NgModule } from "@angular/core";
 
 @Component({
   selector: "app-name",
-  template: `<h1>Hello {{ name }}</h1>`,
+  template: `<h1>你好 {{ name }}</h1>`,
 })
 export class NameComponent {
-  name = "John";
+  name = "张三";
 
   constructor() {
-    this.name = "Jane";
+    this.name = "李四";
   }
 }
 

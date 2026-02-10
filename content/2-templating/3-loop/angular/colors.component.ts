@@ -10,7 +10,7 @@ import { CommonModule } from "@angular/common";
   `,
 })
 export class ColorsComponent {
-  colors = ["red", "green", "blue"];
+  colors = ["红", "绿", "蓝"];
 }
 
 @NgModule({

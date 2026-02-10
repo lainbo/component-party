@@ -13,5 +13,5 @@ export const App = component$(() => {
     cleanup(() => clearInterval(timer));
   });
 
-  return <p>Current time: {store.time}</p>;
+  return <p>当前时间: {store.time}</p>;
 });

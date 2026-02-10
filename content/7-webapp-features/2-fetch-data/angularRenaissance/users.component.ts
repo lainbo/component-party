@@ -7,9 +7,9 @@ import { UserService } from "./user.service";
     @let vm = userService.state();
 
     @if (vm.loading) {
-      <div>Fetching users...</div>
+      <div>正在获取用户信息……</div>
     } @else if (vm.error) {
-      <p>An error occurred while fetching users</p>
+      <p>获取用户信息出错</p>
     } @else {
       <ul>
         @for (user of vm.users; track user) {

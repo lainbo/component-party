@@ -6,7 +6,7 @@ import { FormsModule } from "@angular/forms";
   selector: "app-is-available",
   template: `
     <input id="is-available" type="checkbox" [(ngModel)]="isAvailable" />
-    <label for="is-available">Is available</label>
+    <label for="is-available">这是一个checkbox</label>
   `,
 })
 export class IsAvailableComponent {

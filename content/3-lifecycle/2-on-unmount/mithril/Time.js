@@ -9,7 +9,7 @@ export default function Time() {
   }, 1000);
 
   return {
-    view: () => m("p", `Current time: ${time}`),
+    view: () => m("p", `当前时间: ${time}`),
     onremove: () => clearInterval(timer),
   };
 }

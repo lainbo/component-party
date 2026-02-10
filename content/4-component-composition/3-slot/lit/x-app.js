@@ -6,6 +6,6 @@ import "./funny-button";
 @customElement("x-app")
 export class XApp extends LitElement {
   render() {
-    return html`<funny-button>Click me!</funny-button>`;
+    return html`<funny-button>点我!</funny-button>`;
   }
 }

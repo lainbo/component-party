@@ -7,7 +7,7 @@ import { FunnyButtonComponent } from "./funny-button.component";
   template: `
     <app-funny-button />
 
-    <app-funny-button>I got content!</app-funny-button>
+    <app-funny-button>这是传到slot的内容!</app-funny-button>
   `,
 })
 export class AppComponent {}

@@ -5,7 +5,7 @@ import { UserprofileModule } from "./userprofile.component";
   selector: "app-root",
   template: `
     <app-userprofile
-      name="John"
+      name="张三"
       [age]="20"
       [favouriteColors]="['green', 'blue', 'red']"
       [isAvailable]="true"

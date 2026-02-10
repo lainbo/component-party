@@ -9,7 +9,7 @@ export default class PickPill extends Component {
   handleChange = (event) => (this.picked = event.target.value);
 
   <template>
-    <div>Picked: {{this.picked}}</div>
+    <div>你选择了: {{this.picked}}</div>
 
     <input
       id="blue-pill"
@@ -18,7 +18,7 @@ export default class PickPill extends Component {
       checked={{eq this.picked "blue"}}
       {{on "change" this.handleChange}}
     />
-    <label htmlFor="blue-pill">Blue pill</label>
+    <label htmlFor="blue-pill">蓝色</label>
 
     <input
       id="red-pill"
@@ -27,6 +27,6 @@ export default class PickPill extends Component {
       checked={{eq this.picked "red"}}
       {{on "change" this.handleChange}}
     />
-    <label htmlFor="red-pill">Red pill</label>
+    <label htmlFor="red-pill">红色</label>
   </template>
 }

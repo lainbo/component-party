@@ -3,7 +3,7 @@ import { tracked } from "@glimmer/tracking";
 import { on } from '@ember/modifier';
 
 export default class InputHello extends Component {
-  @tracked text = "Hello World";
+  @tracked text = "你好世界";
 
   handleInput = (event) => (this.text = event.target.value);
 

@@ -7,7 +7,7 @@ export default function Counter() {
     view: () =>
       m(
         "div",
-        m("p", `Counter: ${count}`),
+        m("p", `计数器: ${count}`),
         m("button", { onclick: incrementCount }, "+1"),
       ),
   };

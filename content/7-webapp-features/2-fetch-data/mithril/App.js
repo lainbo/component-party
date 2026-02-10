@@ -21,8 +21,8 @@ export default function App() {
   return {
     oninit: fetchUsers,
     view() {
-      if (isLoading) return m("p", "Fetching users...");
-      if (error) return m("p", "An error occurred while fetching users");
+      if (isLoading) return m("p", "正在获取用户信息……");
+      if (error) return m("p", "获取用户信息出错");
       return users.map((user) =>
         m(
           "li",

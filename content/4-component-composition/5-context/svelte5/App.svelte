@@ -5,12 +5,12 @@
 
   const user = createUserState({
     id: 1,
-    username: "unicorn42",
-    email: "unicorn42@example.com",
+    username: "abcdefg",
+    email: "abcdefg@example.com",
   });
 
   setContext("user", user);
 </script>
 
-<h1>Welcome back, {user.username}</h1>
+<h1>欢迎回来, {user.username}</h1>
 <UserProfile />

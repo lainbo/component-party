@@ -5,7 +5,7 @@ export default function App() {
   return {
     view: () =>
       m(UserProfile, {
-        name: "john",
+        name: "张三",
         age: 20,
         favouriteColors: ["green", "blue", "red"],
         isAvailable: true,

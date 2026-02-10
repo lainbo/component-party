@@ -11,5 +11,5 @@ export default function Time() {
     return () => clearInterval(timer);
   }, []);
 
-  return <p>Current time: {time}</p>;
+  return <p>当前时间: {time}</p>;
 }

@@ -7,7 +7,7 @@
     <div class="flex justify-between items-center py-3">
       <a class="font-semibold text-lg flex items-center space-x-3" href="/">
         <img src="/popper.svg" alt="logo" class="size-5" />
-        <h1>Component Party</h1>
+        <h1>Component Party 中文版</h1>
       </a>
 
       <div class="flex items-center space-x-4">

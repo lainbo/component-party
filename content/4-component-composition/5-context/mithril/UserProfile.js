@@ -9,13 +9,13 @@ export default function UserProfile() {
     }) =>
       m(
         "div",
-        m("h2", "My Profile"),
-        m("p", `Username: ${username}`),
-        m("p", `Email : ${email}`),
+        m("h2", "我的简介"),
+        m("p", `用户名: ${username}`),
+        m("p", `邮箱: ${email}`),
         m(
           "button",
-          { onclick: () => updateUsername("Jane") },
-          "Update username to Jane",
+          { onclick: () => updateUsername("李四") },
+          "更新用户名为 李四",
         ),
       ),
   };

@@ -11,5 +11,5 @@ export component Time() {
     return () => clearInterval(timer);
   });
 
-  <h1>{`Current time: ${@time}`}</h1>
+  <h1>{`当前时间: ${@time}`}</h1>
 }

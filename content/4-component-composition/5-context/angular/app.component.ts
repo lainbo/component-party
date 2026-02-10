@@ -6,7 +6,7 @@ import { UserProfileModule } from "./user-profile.component";
   providers: [UserService],
   selector: "app-root",
   template: `
-    <h1>Welcome back, {{ userService.user.username }}</h1>
+    <h1>欢迎回来, {{ userService.user.username }}</h1>
     <app-user-profile />
   `,
 })

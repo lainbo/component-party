@@ -2,7 +2,7 @@ import { Component, NgModule, OnDestroy } from "@angular/core";
 
 @Component({
   selector: "app-time",
-  template: `<p>Current time: {{ time }}</p>`,
+  template: `<p>当前时间: {{ time }}</p>`,
 })
 export class TimeComponent implements OnDestroy {
   time = new Date().toLocaleTimeString();

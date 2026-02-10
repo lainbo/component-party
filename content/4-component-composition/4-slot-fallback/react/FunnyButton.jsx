@@ -16,7 +16,7 @@ export default function FunnyButton({ children }) {
         outline: "0",
       }}
     >
-      {children || <span>No content found</span>}
+      {children || <span>默认slot内容</span>}
     </button>
   );
 }

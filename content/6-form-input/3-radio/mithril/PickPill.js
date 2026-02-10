@@ -9,7 +9,7 @@ export default function PickPill() {
     view: () =>
       m(
         "",
-        m("", `Picked: ${picked}`),
+        m("", `你选择了: ${picked}`),
         pills.map((pill) =>
           m(
             ".",

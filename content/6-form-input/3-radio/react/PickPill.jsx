@@ -9,7 +9,7 @@ export default function PickPill() {
 
   return (
     <>
-      <div>Picked: {picked}</div>
+      <div>你选择了: {picked}</div>
 
       <input
         id="blue-pill"
@@ -18,7 +18,7 @@ export default function PickPill() {
         value="blue"
         onChange={handleChange}
       />
-      <label htmlFor="blue-pill">Blue pill</label>
+      <label htmlFor="blue-pill">蓝色</label>
 
       <input
         id="red-pill"
@@ -27,7 +27,7 @@ export default function PickPill() {
         value="red"
         onChange={handleChange}
       />
-      <label htmlFor="red-pill">Red pill</label>
+      <label htmlFor="red-pill">红色</label>
     </>
   );
 }

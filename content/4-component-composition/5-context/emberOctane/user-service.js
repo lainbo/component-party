@@ -4,8 +4,8 @@ import { action } from "@ember/object";
 
 export default class UserServiceService extends Service {
   @tracked id = 1;
-  @tracked username = "unicorn42";
-  @tracked email = "unicorn42@example.com";
+  @tracked username = "abcdefg";
+  @tracked email = "abcdefg@example.com";
 
   get user() {
     return {

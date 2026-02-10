@@ -1,4 +1,4 @@
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 
 export class App {
   lightIndex = 0;

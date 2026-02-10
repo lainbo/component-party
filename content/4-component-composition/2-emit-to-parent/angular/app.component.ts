@@ -4,7 +4,7 @@ import { AnswerButtonModule } from "./answer-button.component";
 @Component({
   selector: "app-root",
   template: `
-    <p>Are you happy?</p>
+    <p>你快乐吗?</p>
 
     <app-answer-button (yes)="onAnswerYes()" (no)="onAnswerNo()">
     </app-answer-button>

@@ -8,7 +8,7 @@ export default class Counter extends Component {
   incrementCount = () => this.count++;
 
   <template>
-    <p>Counter: {{this.count}}</p>
+    <p>计数器: {{this.count}}</p>
     <button {{on "click" this.incrementCount}}>+1</button>
   </template>
 }

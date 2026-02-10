@@ -13,6 +13,7 @@ import {
   markdownToHighlightedHtml,
 } from "./highlighter.ts";
 import kebabCase from "just-kebab-case";
+import i18n from "../../i18n/zh-CN.json" with { type: "json" };
 
 interface File {
   fileName: string;
@@ -349,7 +350,12 @@ export default async function generateContent(
 }
 
 function dirNameToTitle(dirName: string): string {
-  return capitalize(dirName.split("-").splice(1).join(" "));
+  const title = capitalize(dirName.split("-").splice(1).join(" "));
+  const sectionTranslation = (i18n.sections as Record<string, string>)[title];
+  if (sectionTranslation) return sectionTranslation;
+  const snippetTranslation = (i18n.snippets as Record<string, string>)[title];
+  if (snippetTranslation) return snippetTranslation;
+  return title;
 }
 
 function capitalize(string: string): string {

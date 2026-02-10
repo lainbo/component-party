@@ -4,7 +4,7 @@ import { repeat } from "lit/directives/repeat.js";
 
 @customElement("colors-list")
 export class ColorsList extends LitElement {
-  colors = ["red", "green", "blue"];
+  colors = ["红", "绿", "蓝"];
 
   render() {
     return html`

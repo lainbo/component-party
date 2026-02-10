@@ -1,5 +1,5 @@
 <script>
-  const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+  const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
   let lightIndex = $state(0);
 
   const light = $derived(TRAFFIC_LIGHTS[lightIndex]);
@@ -9,15 +9,15 @@
   }
 </script>
 
-<button onclick={nextLight}>Next light</button>
-<p>Light is: {light}</p>
+<button onclick={nextLight}>下一个灯</button>
+<p>现在亮着的是: {light}</p>
 <p>
-  You must
-  {#if light === "red"}
-    <span>STOP</span>
-  {:else if light === "orange"}
-    <span>SLOW DOWN</span>
-  {:else if light === "green"}
-    <span>GO</span>
+  你应该
+  {#if light === "红灯"}
+    <span>停下</span>
+  {:else if light === "黄灯"}
+    <span>慢行</span>
+  {:else if light === "绿灯"}
+    <span>赶紧走</span>
   {/if}
 </p>

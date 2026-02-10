@@ -1,7 +1,7 @@
 import m from "mithril";
 
 export default function InputHello() {
-  let text = "Hello world";
+  let text = "你好世界";
   const handleChange = ({ target: { value } }) => (text = value);
 
   return {

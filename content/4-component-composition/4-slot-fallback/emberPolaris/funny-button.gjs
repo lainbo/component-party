@@ -3,7 +3,7 @@
     {{#if (has-block)}}
       {{yield}}
     {{else}}
-      <span>No content found</span>
+      <span>默认slot内容</span>
     {{/if}}
   </button>
 </template>

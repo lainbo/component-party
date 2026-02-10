@@ -1,3 +1,3 @@
 export class InputHello {
-  value: string = "Hello World";
+  value: string = "你好世界";
 }

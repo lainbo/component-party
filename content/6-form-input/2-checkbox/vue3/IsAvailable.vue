@@ -6,5 +6,5 @@ const isAvailable = ref(true);
 
 <template>
   <input id="is-available" v-model="isAvailable" type="checkbox" />
-  <label for="is-available">Is available</label>
+  <label for="is-available">这是一个checkbox</label>
 </template>

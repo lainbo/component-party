@@ -1,6 +1,6 @@
 const pageTitle = () => document.title;
 
 <template>
-  <p>Page title is: {{(pageTitle)}}</p>
+  <p>页面标题: {{(pageTitle)}}</p>
 </template>
 

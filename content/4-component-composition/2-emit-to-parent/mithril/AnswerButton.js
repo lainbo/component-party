@@ -3,7 +3,7 @@ export const AnswerButton = ({ attrs: { onYes, onNo } }) => ({
   view: () =>
     m(
       "div",
-      m("button", { onclick: onYes }, "YES"),
-      m("button", { onclick: onNo }, "NO"),
+      m("button", { onclick: onYes }, "是的！"),
+      m("button", { onclick: onNo }, "不是！"),
     ),
 });

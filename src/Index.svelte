@@ -49,8 +49,8 @@
   const isVersusFrameworks = $derived(frameworksSelected.length === 2);
   const siteTitle = $derived(
     isVersusFrameworks
-      ? `${frameworksSelected.map((f) => f!.title).join(" vs ")} - Component Party`
-      : "Component Party",
+      ? `${frameworksSelected.map((f) => f!.title).join(" vs ")} - JavaScript 框架语法对比`
+      : "JavaScript 框架语法对比",
   );
   const frameworkIdsFromSearchParam = $derived.by(() => {
     const value = searchParams.get(FRAMEWORK_IDS_FROM_URL_KEY);
@@ -176,16 +176,11 @@
   <meta
     name="description"
     content={isVersusFrameworks
-      ? `Compare ${frameworksSelected
+      ? `对比 ${frameworksSelected
           .map((f) => f?.title)
           .filter(Boolean)
-          .join(
-            " vs ",
-          )} frameworks side-by-side. See syntax differences, features, and code examples for ${frameworksSelected
-          .map((f) => f?.title)
-          .filter(Boolean)
-          .join(" and ")}.`
-      : "Compare JavaScript frameworks side-by-side: React, Vue, Angular, Svelte, Solid.js, and more. See syntax differences, features, and code examples for web development frameworks."}
+          .join(" 与 ")} 框架的语法差异、特性和代码示例。`
+      : "对比 JavaScript 框架的语法差异：React、Vue、Angular、Svelte、Solid.js 等。查看各 Web 开发框架的语法差异、特性和代码示例。"}
   />
   <meta
     name="keywords"
@@ -194,35 +189,25 @@
           .map((f) => f?.title)
           .filter(Boolean)
           .join(", ") +
-        ", framework comparison, JavaScript frameworks, web development, frontend development, code comparison"
-      : "JavaScript frameworks, React, Vue, Angular, Svelte, Solid.js, framework comparison, web development, frontend frameworks, component libraries, JavaScript libraries, code comparison, programming tools, developer tools, web components, JSX, TypeScript, modern JavaScript"}
+        ", 框架对比, JavaScript 框架, Web 开发, 前端开发, 代码对比"
+      : "JavaScript 框架, React, Vue, Angular, Svelte, Solid.js, 框架对比, Web 开发, 前端框架, 组件库, JavaScript 库, 代码对比, 编程工具, 开发者工具, Web 组件, JSX, TypeScript, 现代 JavaScript"}
   />
   {#if isVersusFrameworks}
     <meta property="og:title" content={siteTitle} />
     <meta
       property="og:description"
-      content="Compare {frameworksSelected
+      content="对比 {frameworksSelected
         .map((f) => f?.title)
         .filter(Boolean)
-        .join(
-          ' vs ',
-        )} frameworks side-by-side. See syntax differences, features, and code examples for {frameworksSelected
-        .map((f) => f?.title)
-        .filter(Boolean)
-        .join(' and ')}."
+        .join(' 与 ')} 框架的语法差异、特性和代码示例。"
     />
     <meta property="twitter:title" content={siteTitle} />
     <meta
       property="twitter:description"
-      content="Compare {frameworksSelected
+      content="对比 {frameworksSelected
         .map((f) => f?.title)
         .filter(Boolean)
-        .join(
-          ' vs ',
-        )} frameworks side-by-side. See syntax differences, features, and code examples for {frameworksSelected
-        .map((f) => f?.title)
-        .filter(Boolean)
-        .join(' and ')}."
+        .join(' 与 ')} 框架的语法差异、特性和代码示例。"
     />
   {/if}
 </svelte:head>
@@ -241,8 +226,8 @@
         {#if framework}
           <button
             title={frameworkIdsSelected.has(framework.id)
-              ? `Hide ${framework.title}`
-              : `Display ${framework.title}`}
+              ? `隐藏 ${framework.title}`
+              : `显示 ${framework.title}`}
             class={[
               "text-sm flex-shrink-0 rounded border px-3 py-1 bg-gray-900 hover:bg-gray-800 transition-all mr-2",
               frameworkIdsSelected.has(framework.id)
@@ -265,13 +250,13 @@
       {/each}
       {#if bonusFrameworks.length > 0 && !showBonusFrameworks}
         <button
-          title="show more frameworks"
+          title="显示更多框架"
           class="opacity-70 text-sm flex-shrink-0 rounded border border-gray-700 px-3 py-1 border-opacity-50 bg-gray-900 hover:bg-gray-800 transition-all mr-2 flex items-center justify-center"
           data-testid="show-more-frameworks-button"
           onclick={() => {
             showBonusFrameworks = !showBonusFrameworks;
           }}
-          aria-label="show more frameworks"
+          aria-label="显示更多框架"
         >
           <span class="iconify ph--dots-three size-4" aria-hidden="true"></span>
         </button>
@@ -293,9 +278,7 @@
               ></span>
             </div>
             <div class="flex justify-center">
-              <h1 id="empty-state-heading" class="sr-only">
-                Select Frameworks to Compare
-              </h1>
+              <h1 id="empty-state-heading" class="sr-only">选择要对比的框架</h1>
               <p
                 class="text-lg opacity-80 flex items-center text-center space-x-3"
                 data-testid="empty-state-message"
@@ -305,9 +288,7 @@
                   alt="Component Party logo"
                   class="size-6"
                 />
-                <span>
-                  Please select a framework to view framework's snippets
-                </span>
+                <span> 请选择框架以查看框架代码片段 </span>
                 <img
                   src="/popper.svg"
                   alt="Component Party logo"
@@ -436,8 +417,7 @@
                                               data-testid="missing-snippet-message"
                                             >
                                               <span>
-                                                Help us to improve Component
-                                                Party
+                                                帮助我们改进 Component Party
                                               </span>
                                               <img
                                                 src="/popper.svg"
@@ -458,9 +438,7 @@
                                                 <button
                                                   class="flex items-center space-x-3"
                                                 >
-                                                  <span
-                                                    >Contribute on Github</span
-                                                  >
+                                                  <span>在 Github 上贡献</span>
                                                   <span
                                                     class="iconify simple-icons--github size-5"
                                                     aria-hidden="true"
@@ -513,8 +491,7 @@
                                       class="text-orange-500"
                                       data-testid={`error-snippet-${frameworkId}-${snippet.snippetId}`}
                                     >
-                                      Error loading snippets. Please reload the
-                                      page.
+                                      加载代码片段失败，请刷新页面。
                                     </p>
                                   {/if}
                                 </div>

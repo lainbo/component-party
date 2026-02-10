@@ -6,8 +6,8 @@ export default function CssStyle() {
     view: () =>
       m(
         "div",
-        m("h1.title", "I am red"),
-        m("button", { style: { fontSize: "10rem" } }, "I am a button"),
+        m("h1.title", "我是红色的"),
+        m("button", { style: { fontSize: "10rem" } }, "我是一个按钮"),
       ),
   };
 }

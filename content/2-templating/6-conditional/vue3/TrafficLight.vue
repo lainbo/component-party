@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed } from "vue";
-const TRAFFIC_LIGHTS = ["red", "orange", "green"];
+const TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
 const lightIndex = ref(0);
 
 const light = computed(() => TRAFFIC_LIGHTS[lightIndex.value]);
@@ -11,12 +11,12 @@ function nextLight() {
 </script>
 
 <template>
-  <button @click="nextLight">Next light</button>
-  <p>Light is: {{ light }}</p>
+  <button @click="nextLight">下一个灯</button>
+  <p>现在亮着的是: {{ light }}</p>
   <p>
-    You must
-    <span v-if="light === 'red'">STOP</span>
-    <span v-else-if="light === 'orange'">SLOW DOWN</span>
-    <span v-else-if="light === 'green'">GO</span>
+    你应该
+    <span v-if="light === '红灯'">停下</span>
+    <span v-else-if="light === '黄灯'">慢行</span>
+    <span v-else-if="light === '绿灯'">赶紧走</span>
   </p>
 </template>

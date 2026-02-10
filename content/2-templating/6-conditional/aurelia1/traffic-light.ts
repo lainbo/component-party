@@ -1,5 +1,5 @@
 export class App {
-  TRAFFIC_LIGHTS = ["red", "orange", "green"];
+  TRAFFIC_LIGHTS = ["红灯", "黄灯", "绿灯"];
   lightIndex = 0;
   light: string = this.TRAFFIC_LIGHTS[this.lightIndex];
 

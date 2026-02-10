@@ -5,7 +5,7 @@
   export let isAvailable = false;
 </script>
 
-<p>My name is {name}!</p>
+<p>我的名字是 {name}!</p>
 <p>My age is {age}!</p>
 <p>My favourite colors are {favouriteColors.join(", ")}!</p>
 <p>I am {isAvailable ? "available" : "not available"}</p>

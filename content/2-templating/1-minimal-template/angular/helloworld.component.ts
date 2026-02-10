@@ -2,7 +2,7 @@ import { Component, NgModule } from "@angular/core";
 
 @Component({
   selector: "app-helloworld",
-  template: `<h1>Hello world</h1>`,
+  template: `<h1>你好，世界</h1>`,
 })
 export class HelloworldComponent {}
 

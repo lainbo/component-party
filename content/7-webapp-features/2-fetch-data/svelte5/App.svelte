@@ -5,9 +5,9 @@
 </script>
 
 {#if response.isLoading}
-  <p>Fetching users...</p>
+  <p>正在获取用户信息……</p>
 {:else if response.error}
-  <p>An error occurred while fetching users</p>
+  <p>获取用户信息出错</p>
 {:else if response.users}
   <ul>
     {#each response.users as user}

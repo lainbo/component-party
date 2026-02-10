@@ -5,7 +5,7 @@ const PickPill = component$(() => {
 
   return (
     <>
-      <div>Picked: {pickedColor.value}</div>
+      <div>你选择了: {pickedColor.value}</div>
       <input
         id="blue-pill"
         type="radio"
@@ -13,7 +13,7 @@ const PickPill = component$(() => {
         checked={pickedColor.value === "blue"}
         value="blue"
       />
-      <label for="blue-pill">Blue pill</label>
+      <label for="blue-pill">蓝色</label>
 
       <input
         id="red-pill"
@@ -22,7 +22,7 @@ const PickPill = component$(() => {
         bind:value={pickedColor}
         value="red"
       />
-      <label for="red-pill">Red pill</label>
+      <label for="red-pill">红色</label>
     </>
   );
 });

@@ -14,18 +14,16 @@ export class UserProfile extends LitElement {
   updateUsername;
 
   handleUpdateUsername() {
-    this.updateUsername("Jane");
+    this.updateUsername("李四");
   }
 
   render() {
     return html`
       <div>
-        <h2>My Profile</h2>
-        <p>Username: ${this.user.username}</p>
-        <p>Email: ${this.user.email}</p>
-        <button @click="${this.handleUpdateUsername}">
-          Update username to Jane
-        </button>
+        <h2>我的简介</h2>
+        <p>用户名: ${this.user.username}</p>
+        <p>邮箱: ${this.user.email}</p>
+        <button @click="${this.handleUpdateUsername}">更新用户名为 李四</button>
       </div>
     `;
   }

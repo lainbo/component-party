@@ -9,7 +9,7 @@ export default class App extends Component {
   handleNo = () => (this.isHappy = false);
 
   <template>
-    <p>Are you happy?</p>
+    <p>你快乐吗?</p>
     <AnswerButton @onYes={{this.handleYes}} @onNo={{this.handleNo}} />
     <p style="font-size: 50px;">{{if this.isHappy "😀" "😥"}}</p>
   </template>

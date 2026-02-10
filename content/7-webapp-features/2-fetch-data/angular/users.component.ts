@@ -5,12 +5,10 @@ import { UserService } from "./user.service";
   selector: "app-users",
   template: `
     <ng-container *ngIf="userService.state$ | async as vm">
-      <div *ngIf="vm.loading; else errorTpl">Fetching users...</div>
+      <div *ngIf="vm.loading; else errorTpl">正在获取用户信息……</div>
 
       <ng-template #errorTpl>
-        <p *ngIf="vm.error; else usersListTpl">
-          An error occurred while fetching users
-        </p>
+        <p *ngIf="vm.error; else usersListTpl">获取用户信息出错</p>
       </ng-template>
 
       <ng-template #usersListTpl>

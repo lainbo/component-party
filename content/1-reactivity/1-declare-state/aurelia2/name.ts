@@ -1,3 +1,3 @@
 export class Name {
-  name = "John";
+  name = "张三";
 }

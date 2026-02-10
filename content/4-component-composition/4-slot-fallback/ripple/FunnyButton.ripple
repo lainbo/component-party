@@ -5,7 +5,7 @@ export component FunnyButton({ children }) {
     if (children) {
       <children />
     } else {
-      <span>{"No content found"}</span>
+      <span>{"默认slot内容"}</span>
     }
   </button>
 }

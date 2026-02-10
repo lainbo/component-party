@@ -8,8 +8,8 @@ export class XApp extends LitElement {
 
   render() {
     return this.fetchUsers.render({
-      pending: () => html`<p>Fetching users...</p>`,
-      error: (e) => html`<p>An error occurred while fetching users</p>`,
+      pending: () => html`<p>正在获取用户信息……</p>`,
+      error: (e) => html`<p>获取用户信息出错</p>`,
       complete: (data) => html`
         <ul>
           ${data.map(

@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "Reactivity": "响应式",
+    "Templating": "模板语法",
+    "Lifecycle": "生命周期",
+    "Component composition": "组件组合",
+    "Form input": "表单输入",
+    "Webapp features": "Web应用特性"
+  },
+  "snippets": {
+    "Declare state": "声明状态",
+    "Update state": "更新状态",
+    "Computed state": "计算属性",
+    "Minimal template": "最简模板",
+    "Styling": "样式",
+    "Loop": "DOM循环",
+    "Event click": "点击事件",
+    "Dom ref": "DOM引用",
+    "Conditional": "条件渲染",
+    "On mount": "组件加载时",
+    "On unmount": "组件卸载时",
+    "Props": "组件Props传参",
+    "Emit to parent": "向父组件emit事件",
+    "Slot": "slot插槽",
+    "Slot fallback": "slot插槽内容",
+    "Context": "上下文",
+    "Input text": "输入框",
+    "Checkbox": "复选框",
+    "Radio": "单选框",
+    "Select": "选择器",
+    "Render app": "渲染应用",
+    "Fetch data": "fetch获取数据"
+  },
+  "ui": {
+    "siteTitle": "JavaScript 框架语法对比",
+    "selectFramework": "请选择框架以查看框架代码片段",
+    "missingSnippet": "缺少代码片段",
+    "helpImprove": "帮助我们改进 Component Party",
+    "contributeOnGithub": "在 Github 上贡献",
+    "errorLoading": "加载代码片段失败，请刷新页面。",
+    "showMore": "显示更多框架",
+    "hideFramework": "隐藏",
+    "displayFramework": "显示"
+  }
+}

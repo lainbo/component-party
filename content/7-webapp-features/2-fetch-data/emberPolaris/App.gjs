@@ -31,9 +31,9 @@ export default class App extends Component {
   <template>
     {{#let (this.fetchUsers) as |request|}}
       {{#if request.isLoading}}
-        <p>Fetching users...</p>
+        <p>正在获取用户信息……</p>
       {{else if request.error}}
-        <p>An error occurred while fetching users</p>
+        <p>获取用户信息出错</p>
       {{else}}
         <ul>
           {{#each request.data as |user|}}

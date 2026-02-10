@@ -8,9 +8,9 @@ type Props = {
 const AnswerButton = component$((props: Props) => {
   return (
     <>
-      <button onClick$={props.onYes$}>YES</button>
+      <button onClick$={props.onYes$}>是的！</button>
 
-      <button onClick$={props.onNo$}>NO</button>
+      <button onClick$={props.onNo$}>不是！</button>
     </>
   );
 });

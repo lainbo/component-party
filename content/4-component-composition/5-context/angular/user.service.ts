@@ -4,8 +4,8 @@ import { Injectable } from "@angular/core";
 export class UserService {
   user = {
     id: 1,
-    username: "unicorn42",
-    email: "unicorn42@example.com",
+    username: "abcdefg",
+    email: "abcdefg@example.com",
   };
 
   updateUsername(username: string) {

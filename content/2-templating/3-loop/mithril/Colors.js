@@ -1,7 +1,7 @@
 import m from "mithril";
 
 export default function Colors() {
-  const colors = ["red", "green", "blue"];
+  const colors = ["红", "绿", "蓝"];
   return {
     view: () =>
       m(

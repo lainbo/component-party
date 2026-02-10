@@ -12,6 +12,6 @@ export class PageTitle extends LitElement {
   }
 
   render() {
-    return html`<p>Page title: ${this.pageTitle}</p>`;
+    return html`<p>页面标题: ${this.pageTitle}</p>`;
   }
 }

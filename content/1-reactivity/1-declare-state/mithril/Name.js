@@ -1,9 +1,9 @@
 import m from "mithril";
 
 export default function Name() {
-  let name = "John";
+  let name = "张三";
 
   return {
-    view: () => m("h1", `Hello ${name}`),
+    view: () => m("h1", `你好 ${name}`),
   };
 }

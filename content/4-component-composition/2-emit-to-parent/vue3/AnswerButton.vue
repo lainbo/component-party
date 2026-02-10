@@ -11,7 +11,7 @@ function clickNo() {
 </script>
 
 <template>
-  <button @click="clickYes">YES</button>
+  <button @click="clickYes">是的！</button>
 
-  <button @click="clickNo">NO</button>
+  <button @click="clickNo">不是！</button>
 </template>

@@ -4,8 +4,8 @@ import UserProfile from "./UserProfile";
 export default function App() {
   const user = {
     id: 1,
-    username: "unicorn42",
-    email: "unicorn42@example.com",
+    username: "abcdefg",
+    email: "abcdefg@example.com",
   };
 
   const updateUsername = (username) => (user.username = username);
@@ -14,7 +14,7 @@ export default function App() {
     view: () =>
       m(
         "",
-        m("h1", `Welcome Back, ${user.username}`),
+        m("h1", `欢迎回来, ${user.username}`),
         m(UserProfile, { user, updateUsername }),
       ),
   };

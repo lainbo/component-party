@@ -1,7 +1,7 @@
 export const user = {
   id: 1,
-  username: "unicorn42",
-  email: "unicorn42@example.com",
+  username: "abcdefg",
+  email: "abcdefg@example.com",
 };
 
 export class UserProfile {
