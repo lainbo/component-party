@@ -1,7 +1,0 @@
-import { track } from "ripple";
-
-export component Name() {
-  let name = track("张三");
-
-  <h1>{`你好 ${@name}`}</h1>
-}

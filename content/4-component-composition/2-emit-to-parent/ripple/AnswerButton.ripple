@@ -1,5 +1,0 @@
-export component AnswerButton({ onYes, onNo }) {
-  <button onClick={onYes}>{"是的！"}</button>
-
-  <button onClick={onNo}>{"不是！"}</button>
-}

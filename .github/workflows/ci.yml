@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Setup Node.js and pnpm
         uses: ./.github/actions/setup-node-pnpm
@@ -25,6 +25,15 @@ jobs:
       - name: Run checks
         run: pnpm check:ci
 
+      - name: Run unit tests
+        run: pnpm run test:unit
+
+      - name: Check dependencies
+        run: pnpm check:deps
+
+      - name: Check toolchain entry points
+        run: pnpm check:toolchain
+
       - name: Install Playwright Chromium
         run: pnpm run test:e2e:install
 
@@ -32,7 +41,7 @@ jobs:
         run: pnpm run test:e2e
 
       - name: Upload test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: always()
         with:
           name: playwright-report

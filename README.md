@@ -14,7 +14,7 @@ How do we solve this ? Developers love having framework overview by examples. It
 <!-- progression start -->
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/svelte.svg" />
+    <img width="18" height="18" src="static/framework/svelte.svg" />
     <b>Svelte 5</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -49,10 +49,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/react.svg" />
+    <img width="18" height="18" src="static/framework/react.svg" />
     <b>React</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -87,10 +87,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/vue.svg" />
+    <img width="18" height="18" src="static/framework/vue.svg" />
     <b>Vue 3</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -125,10 +125,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/angular-renaissance.svg" />
+    <img width="18" height="18" src="static/framework/angular-renaissance.svg" />
     <b>Angular Renaissance</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -163,10 +163,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/angular.svg" />
+    <img width="18" height="18" src="static/framework/angular.svg" />
     <b>Angular</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -201,10 +201,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/lit.svg" />
+    <img width="18" height="18" src="static/framework/lit.svg" />
     <b>Lit</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -239,10 +239,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/ember.svg" />
+    <img width="18" height="18" src="static/framework/ember.svg" />
     <b>Ember Polaris</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -277,10 +277,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/ember.svg" />
+    <img width="18" height="18" src="static/framework/ember.svg" />
     <b>Ember Octane</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/96" />
   </summary>
@@ -315,10 +315,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/solid.svg" />
+    <img width="18" height="18" src="static/framework/solid.svg" />
     <b>Solid.js</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -353,10 +353,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/svelte.svg" />
+    <img width="18" height="18" src="static/framework/svelte.svg" />
     <b>Svelte 4</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -391,10 +391,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/vue.svg" />
+    <img width="18" height="18" src="static/framework/vue.svg" />
     <b>Vue 2</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -429,12 +429,12 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/alpine.svg" />
+    <img width="18" height="18" src="static/framework/alpine.svg" />
     <b>Alpine</b>
-    <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/96" />
+    <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
 
 - [x] Reactivity
@@ -451,12 +451,12 @@ How do we solve this ? Developers love having framework overview by examples. It
 - [x] Lifecycle
   - [x] On mount
   - [x] On unmount
-- [ ] Component composition
+- [x] Component composition
   - [x] Props
   - [x] Emit to parent
   - [x] Slot
   - [x] Slot fallback
-  - [ ] Context
+  - [x] Context
 - [x] Form input
   - [x] Input text
   - [x] Checkbox
@@ -467,10 +467,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/mithril.svg" />
+    <img width="18" height="18" src="static/framework/mithril.svg" />
     <b>Mithril</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -505,10 +505,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/aurelia.svg" />
+    <img width="18" height="18" src="static/framework/aurelia.svg" />
     <b>Aurelia 2</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -543,10 +543,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/qwik.svg" />
+    <img width="18" height="18" src="static/framework/qwik.svg" />
     <b>Qwik</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -581,10 +581,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/marko.svg" />
+    <img width="18" height="18" src="static/framework/marko.svg" />
     <b>Marko</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
@@ -619,10 +619,10 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/aurelia.svg" />
+    <img width="18" height="18" src="static/framework/aurelia.svg" />
     <b>Aurelia 1</b>
     <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/91" />
   </summary>
@@ -657,12 +657,12 @@ How do we solve this ? Developers love having framework overview by examples. It
   - [x] Fetch data
 
 </details>
-    
+
 <details>
   <summary>
-    <img width="18" height="18" src="public/framework/ripple.svg" />
+    <img width="18" height="18" src="static/framework/ripple.svg" />
     <b>Ripple</b>
-    <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/91" />
+    <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100" />
   </summary>
 
 - [x] Reactivity
@@ -679,20 +679,20 @@ How do we solve this ? Developers love having framework overview by examples. It
 - [x] Lifecycle
   - [x] On mount
   - [x] On unmount
-- [ ] Component composition
+- [x] Component composition
   - [x] Props
   - [x] Emit to parent
   - [x] Slot
   - [x] Slot fallback
-  - [ ] Context
+  - [x] Context
 - [x] Form input
   - [x] Input text
   - [x] Checkbox
   - [x] Radio
   - [x] Select
-- [ ] Webapp features
+- [x] Webapp features
   - [x] Render app
-  - [ ] Fetch data
+  - [x] Fetch data
 
 </details>
 
@@ -711,6 +711,12 @@ pnpm run dev
 
 This project requires Node.js to be `v22.18.0` or higher.
 
+Bulk formatting commits are listed in `.git-blame-ignore-revs` so they don't clutter `git blame`. Enable it locally with:
+
+```bash
+git config blame.ignoreRevsFile .git-blame-ignore-revs
+```
+
 ### Principle when add/edit a framework snippet
 
 > Clarity is better than optimization for Component Party
@@ -721,9 +727,9 @@ We believe that deep understanding should precede optimization, enabling learner
 ### Add a new framework
 
 1.  Fork the project and create a new branch
-2.  Add the new framework SVG logo in `public/framework`
+2.  Add the new framework SVG logo in `static/framework`
 3.  In `frameworks.ts`, add a new entry with SVG link
-4.  If the framework needs a language syntax highlight, add it to the call to `getHighlighter`’s `langs` argument in `build/lib/generateContent.ts`
+4.  If the framework needs a language syntax highlight, add it to the call to `getHighlighter`’s `langs` argument in `build/lib/highlighter.ts`
 5.  To make a playground link in `build/lib/playgroundUrlByFramework.ts`.
 
 ## 🧑‍💻 Contributors

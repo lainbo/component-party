@@ -1,5 +1,0 @@
-import { FunnyButton } from "./FunnyButton.ripple";
-
-export component App() {
-  <FunnyButton>{"点我!"}</FunnyButton>
-}

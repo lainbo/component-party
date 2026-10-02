@@ -1,0 +1,74 @@
+{
+  "name": "Component Party 中文版 - JavaScript 框架语法对比",
+  "short_name": "Component Party 中文版",
+  "description": "对比 JavaScript 框架的语法差异：React、Vue、Angular、Svelte、Solid.js 等。查看各 Web 开发框架的语法差异、特性和代码示例。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "zh-CN",
+  "categories": ["developer", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/banner2.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Component Party 框架对比界面"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "React vs Vue",
+      "short_name": "React vs Vue",
+      "description": "对比 React 和 Vue.js 框架",
+      "url": "/?f=react,vue3",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "React vs Angular",
+      "short_name": "React vs Angular",
+      "description": "对比 React 和 Angular 框架",
+      "url": "/?f=react,angularRenaissance",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Vue vs Svelte",
+      "short_name": "Vue vs Svelte",
+      "description": "对比 Vue.js 和 Svelte 框架",
+      "url": "/?f=vue3,svelte5",
+      "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

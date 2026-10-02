@@ -1,0 +1,29 @@
+<!-- x-text 必须用在带有 x-data 的元素或其子元素上。 -->
+<!-- 这两个元素可以共用一个带有 x-data 的父元素，也可以像下面这样分别添加 x-data： -->
+
+<h1 x-data>
+  欢迎回来, <span x-text="$store.user.username">未知用户</span>
+</h1>
+
+<div x-data>
+  <h2>我的简介</h2>
+  <p>用户名: <span x-text="$store.user.username"></span></p>
+  <p>邮箱: <span x-text="$store.user.email"></span></p>
+  <button @click="$store.user.updateUsername('李四')">
+    更新用户名为 李四
+  </button>
+</div>
+
+<script>
+  document.addEventListener("alpine:init", () => {
+    Alpine.store("user", {
+      id: 1,
+      username: "abcdefg",
+      email: "abcdefg@example.com",
+
+      updateUsername(newUsername) {
+        this.username = newUsername;
+      },
+    });
+  });
+</script>

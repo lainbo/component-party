@@ -42,12 +42,15 @@ git push origin deploy
 
 - 直接修改 `content/` 目录下各框架代码文件中的**字符串字面量**
 - **不改文件名和路径**，只改文件内容
-- 翻译规则参考 `i18n/zh-CN.json` 中的约定
+- 示例用词沿用下方对照表和 `content/` 中的现有译文
 
 ### UI 文案汉化
 
-- `src/components/Header.svelte` - 站点标题
-- `src/Index.svelte` - 页面文案、SEO meta、空状态提示等
+- `src/lib/components/Header.svelte` - 站点标题
+- `src/lib/components/Comparison.svelte` - 框架选择、代码片段和空状态提示
+- `src/routes/+page.svelte`、`src/routes/compare/[comparison]/+page.svelte` - 页面标题和 SEO meta
+- `src/routes/+error.svelte` - 错误页
+- `src/lib/seo.ts`、`src/app.html`、`static/manifest.json` - 结构化数据和语言设置
 
 ## 常用翻译对照表
 
@@ -67,29 +70,31 @@ git push origin deploy
 | Click me!                 | 点我!          |
 | unicorn42                 | abcdefg        |
 
-完整对照见 `i18n/zh-CN.json`。
+标题和 UI 文案对照见 `i18n/zh-CN.json`，示例用词沿用 `content/` 中的现有译文。
 
 ## 技术栈
 
 - 包管理器: pnpm
-- 框架: Svelte 5 + Vite
+- 框架: Svelte 5 + SvelteKit，构建工具为 Vite+
+- 部署: `pnpm build` 生成静态页面到 `dist/`，使用 `404.html` 作为回退页面
+- 站点地址: `src/lib/frameworkUrl.ts` 的 `BASE_URL` 和 `static/robots.txt` 均指向 `https://component-party.lainbo.com`
 - 构建: `content/` 目录由 Vite 插件在 `buildStart` 时扫描生成到 `src/generatedContent/`
 - `src/generatedContent/` 是自动生成的，不要手动编辑，不需要提交
 
 ## 关键文件
 
-| 文件                                 | 说明                                       |
-| ------------------------------------ | ------------------------------------------ |
-| `i18n/zh-CN.json`                    | 标题翻译映射 + UI 文案翻译                 |
-| `build/lib/generateContent.ts`       | 内容生成脚本（已添加翻译查表逻辑）         |
-| `build/generateContentVitePlugin.ts` | Vite 插件，负责触发内容生成                |
-| `content/`                           | 各框架代码示例（汉化在此目录的文件内容中） |
-| `frameworks.ts`                      | 框架定义列表                               |
-| `src/Index.svelte`                   | 主页面组件                                 |
-| `src/components/Header.svelte`       | 头部组件                                   |
+| 文件                                   | 说明                                       |
+| -------------------------------------- | ------------------------------------------ |
+| `i18n/zh-CN.json`                      | 标题翻译映射 + UI 文案翻译                 |
+| `build/lib/generateContent.ts`         | 内容生成脚本（已添加翻译查表逻辑）         |
+| `build/generateContentVitePlugin.ts`   | Vite 插件，负责触发内容生成                |
+| `content/`                             | 各框架代码示例（汉化在此目录的文件内容中） |
+| `frameworks.ts`                        | 框架及版本定义列表                         |
+| `src/lib/components/Comparison.svelte` | 框架对比组件                               |
+| `src/lib/components/Header.svelte`     | 头部组件                                   |
 
 ## 注意事项
 
 - content 目录下的文件**只改内容不改路径**，这是避免合并地狱的核心原则
 - 翻译只针对用户可见的字符串字面量，不翻译变量名、API 名、组件名
-- 上游可能会新增框架目录（如 emberPolaris、svelte5），合并后需要检查新文件是否需要汉化
+- 上游可能会新增框架目录（如 emberPolaris、svelte5），或迁移示例文件扩展名（如 Ripple 的 `.tsrx`），合并后需要检查新文件是否需要汉化
